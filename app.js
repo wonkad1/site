@@ -274,7 +274,7 @@ function setupEvents() {
     $('#placesGrid').innerHTML = `<div class="empty-state"><strong>${escapeHtml(error.message)}</strong><p>Sayfayı bir web sunucusu üzerinden açın; dosyaya doğrudan çift tıklamayın.</p></div>`;
   }
   if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) {
-    navigator.serviceWorker.register(new URL('sw.js?v=4', document.baseURI), { scope: new URL('./', document.baseURI).pathname })
+    navigator.serviceWorker.register(new URL('sw.js?v=5', document.baseURI), { scope: new URL('./', document.baseURI).pathname })
       .catch(() => {});
   }
 })();

@@ -185,3 +185,25 @@ body[data-hotel] .brand-icon{background:linear-gradient(135deg,#fff0c9,var(--hot
 .mobile-dock-item.active .dock-icon{animation:dock-bob 2.4s ease-in-out infinite}
 @keyframes coast-glow{0%,100%{box-shadow:0 12px 26px #fb8c443d,0 2px 0 #fff5b45c inset}50%{box-shadow:0 15px 33px #fb8c4465,0 2px 0 #fff5b45c inset}}
 @keyframes dock-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+
+/* Keep place detail actions clear of the fixed mobile navigation and safe-area edge. */
+.modal-backdrop{z-index:80}
+body.modal-open .mobile-dock{display:none!important}
+@media(max-width:700px){
+  .modal-backdrop{padding:max(8px,env(safe-area-inset-top)) 10px max(8px,env(safe-area-inset-bottom))}
+  .place-modal{max-height:calc(100vh - 16px - env(safe-area-inset-top) - env(safe-area-inset-bottom));max-height:calc(100dvh - 16px - env(safe-area-inset-top) - env(safe-area-inset-bottom))}
+  .modal-actions{position:sticky;z-index:5;bottom:0;margin:18px -20px -20px;padding:12px 20px calc(12px + env(safe-area-inset-bottom));border-top:1px solid #e5eee9;border-radius:0 0 17px 17px;background:#ffffffed;box-shadow:0 -12px 22px #fff}
+  .modal-actions .button{min-height:46px}
+}
+@media(max-width:700px) and (max-height:720px){
+  .modal-backdrop{align-items:center}
+  .modal-visual{height:clamp(110px,18vh,145px)}
+  .modal-content{padding:15px 18px 18px}
+  .modal-content h2{font-size:21px}
+  .modal-summary{font-size:13px;line-height:1.4;margin-bottom:8px}
+  .modal-description{font-size:12px;line-height:1.55}
+  .modal-facts{margin-top:12px;gap:8px}
+  .fact{padding:10px}
+  .modal-tip{margin-top:10px;padding:10px 12px;line-height:1.45}
+  .modal-actions{margin:14px -18px -18px;padding:10px 18px calc(10px + env(safe-area-inset-bottom));gap:8px}
+}
