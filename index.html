@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#ff6b4a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+  <meta name="description" content="Manavgat'ı keşfedin: Side Antik Kenti, Manavgat Şelalesi, Köprülü Kanyon ve daha fazlası. Dört dilde turistik ziyaretçi rehberi.">
+  <meta property="og:title" content="Manavgat'ı Keşfet | QR Turizm Rehberi">
+  <meta property="og:description" content="Manavgat'ın doğasını, tarihini ve keşfedilecek yerlerini telefonunuzdan keşfedin.">
+  <meta property="og:image" content="assets/images/hero-manavgat.webp">
+  <title>Manavgat'a Hoş Geldiniz | Turizm Rehberi</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">İçeriğe geç</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Manavgat gezi rehberi ana sayfa">
+        <span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M9 11.5A5.5 5.5 0 0 1 14.5 6h19A5.5 5.5 0 0 1 39 11.5v22a4.5 4.5 0 0 1-4.5 4.5h-21A4.5 4.5 0 0 1 9 33.5v-22Z" stroke="currentColor" stroke-width="3"/><path d="M14 13h20v12H14zM14 30h.1M34 30h.1M16 38v3m16-3v3" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M5 19h4m30 0h4" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
+        <span class="brand-copy"><strong>MANAVGAT</strong><span>KEŞİF REHBERİ</span></span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Ana menü">
+        <a href="#kesfet" data-i18n="navDiscover">Keşfet</a>
+        <a href="#planla" data-i18n="navPlan">Planını yap</a>
+        <a href="#ulasim" data-i18n="navTransport">Ulaşım</a>
+        <a href="#paylas" data-i18n="navShare">Paylaş</a>
+      </nav>
+      <div class="nav-actions">
+        <label class="language-picker"><span class="sr-only" data-i18n="language">Dil</span><select id="languageSelect" aria-label="Language"><option value="tr">TR</option><option value="en">EN</option><option value="de">DE</option><option value="ru">RU</option></select></label>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Menüyü aç" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="heroEyebrow">ANTALYA · TÜRKİYE</span></div>
+          <h1 data-i18n="heroTitle">Manavgat'a<br><em>hoş geldiniz.</em></h1>
+          <p class="hero-lead" data-i18n="heroLead">Nehirlerin serinliğini, antik kentlerin hikâyesini ve Akdeniz'in güzelliğini tek rehberde keşfedin.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#kesfet"><span data-i18n="exploreNow">Manavgat'ı keşfet</span><span aria-hidden="true">↗</span></a>
+            <a class="button button-ghost" href="#planla" data-i18n="planVisit">Ziyaretini planla</a>
+          </div>
+          <div class="hero-meta"><span><i class="meta-pulse"></i><span data-i18n="mobileGuide">Telefonun için hazırlandı</span></span><span class="meta-separator"></span><span data-i18n="fourLanguages">4 dilde rehber</span><span class="meta-separator"></span><span data-i18n="noInstall">Uygulama kurmadan açılır</span></div>
+        </div>
+        <div class="hero-stamp"><span class="stamp-top" data-i18n="stampTop">KEŞFET · HİSSET</span><strong>36°47′N<br>31°26′E</strong><span class="stamp-bottom">MANAVGAT / ANTALYA</span></div>
+      </div>
+      <div class="hero-bottom-line"><div class="container hero-bottom-inner"><span data-i18n="heroBottom">Bir QR kod. Koca bir keşif.</span><span class="scroll-mark">↓</span></div></div>
+    </section>
+
+    <section class="quick-strip" aria-label="Rehber özellikleri">
+      <div class="container quick-grid">
+        <div class="quick-item"><span class="quick-icon">⌖</span><div><strong data-i18n="quick1Title">Doğa</strong><small data-i18n="quick1Sub">Nehirler ve kanyonlar</small></div></div>
+        <div class="quick-item"><span class="quick-icon">⌘</span><div><strong data-i18n="quick2Title">Tarih</strong><small data-i18n="quick2Sub">Antik kentler</small></div></div>
+        <div class="quick-item"><span class="quick-icon">☼</span><div><strong data-i18n="quick3Title">Akdeniz</strong><small data-i18n="quick3Sub">Kıyılar ve gün batımı</small></div></div>
+        <div class="quick-item"><span class="quick-icon">◎</span><div><strong data-i18n="quick4Title">Kolay erişim</strong><small data-i18n="quick4Sub">Harita ve pratik bilgiler</small></div></div>
+      </div>
+    </section>
+
+    <section class="section discover-section" id="kesfet">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-kicker" data-i18n="discoverKicker">MANAVGAT'I TANI</span><h2 data-i18n="discoverTitle">Keşfedilecek çok şey var.</h2><p data-i18n="discoverLead">Sana en yakın deneyimi bul. Bir yer seç, detayları incele ve haritada yolunu aç.</p></div>
+          <div class="heading-note"><span class="heading-note-mark">✳</span><span data-i18n="curatedNote">Yerel ve kurumsal kaynaklardan derlendi</span></div>
+        </div>
+        <div class="discover-tools">
+          <label class="search-field"><span aria-hidden="true">⌕</span><input id="placeSearch" type="search" data-i18n-placeholder="searchPlaceholder" placeholder="Yer veya deneyim ara…" autocomplete="off"><kbd>⌘ K</kbd></label>
+          <div class="filters" id="categoryFilters" role="group" aria-label="Kategori filtreleri">
+            <button class="filter-chip active" type="button" data-category="all" data-i18n="filterAll">Tümü</button>
+            <button class="filter-chip" type="button" data-category="nature" data-i18n="filterNature">Doğa</button>
+            <button class="filter-chip" type="button" data-category="history" data-i18n="filterHistory">Tarih</button>
+            <button class="filter-chip" type="button" data-category="adventure" data-i18n="filterAdventure">Macera</button>
+            <button class="filter-chip" type="button" data-category="beach" data-i18n="filterBeach">Plaj</button>
+          </div>
+        </div>
+        <div class="places-grid" id="placesGrid" aria-live="polite">
+          <div class="loading-card"><span class="loader"></span><span data-i18n="loading">Keşif durakları yükleniyor…</span></div>
+        </div>
+        <div class="empty-state" id="emptyState" hidden><span>⌕</span><strong data-i18n="emptyTitle">Bu aramayla eşleşen yer yok.</strong><p data-i18n="emptyText">Başka bir kelime veya kategori deneyin.</p></div>
+      </div>
+    </section>
+
+    <section class="flavour-section" aria-label="Akdeniz deneyimi">
+      <div class="container flavour-layout">
+        <div class="flavour-photo"><img src="assets/images/food-mediterranean.webp" alt="Nehir kıyısında Akdeniz sofrası ve Manavgat doğasını çağrıştıran temsili görsel" loading="lazy"><span data-i18n="flavourPhotoNote">Temsili görsel</span></div>
+        <div class="flavour-copy"><span class="section-kicker" data-i18n="flavourKicker">YAVAŞLA · TADINI ÇIKAR</span><h2 data-i18n="flavourTitle">Manavgat sadece görülecek değil, yaşanacak bir yer.</h2><p data-i18n="flavourText">Nehir kıyısında mola ver, Side sokaklarında dolaş, yerel işletmeleri keşfet ve Akdeniz gününü acele etmeden yaşa. Menü, fiyat ve işletme bilgilerini ziyaret öncesinde kontrol et.</p><a class="button button-primary" href="#kesfet" data-i18n="flavourButton">Keşfe devam et ↗</a></div>
+      </div>
+    </section>
+
+    <section class="section plan-section" id="planla">
+      <div class="container">
+        <div class="section-heading compact-heading"><div><span class="section-kicker" data-i18n="planKicker">KÜÇÜK BİR PLAN, GÜZEL BİR GÜN</span><h2 data-i18n="planTitle">Zamanına göre keşfet.</h2><p data-i18n="planLead">İlham veren kısa rotalar. Ulaşım ve ziyaret koşullarını yola çıkmadan kontrol etmeyi unutma.</p></div></div>
+        <div class="plans-grid">
+          <article class="plan-card plan-blue"><div class="plan-number">01</div><div class="plan-art art-water"><span>WATER</span></div><div class="plan-copy"><span class="plan-time" data-i18n="plan1Time">YARIM GÜN · RAHAT TEMPO</span><h3 data-i18n="plan1Title">Nehir ve şelale</h3><p data-i18n="plan1Text">Manavgat Şelalesi ile başla, ardından nehir kıyısında sakin bir mola ver.</p><a href="#kesfet" data-place-link="manavgat-waterfall" data-i18n="viewStops">Durakları gör ↗</a></div></article>
+          <article class="plan-card plan-sand"><div class="plan-number">02</div><div class="plan-art art-history"><span>HISTORY</span></div><div class="plan-copy"><span class="plan-time" data-i18n="plan2Time">YARIM / TAM GÜN · TARİH</span><h3 data-i18n="plan2Title">Side'de zaman yolculuğu</h3><p data-i18n="plan2Text">Antik tiyatroyu, sütunlu yolları ve deniz kıyısındaki tapınakları keşfet.</p><a href="#kesfet" data-place-link="side-ancient-city" data-i18n="viewStops">Durakları gör ↗</a></div></article>
+          <article class="plan-card plan-green"><div class="plan-number">03</div><div class="plan-art art-canyon"><span>OUTDOOR</span></div><div class="plan-copy"><span class="plan-time" data-i18n="plan3Time">TAM GÜN · DOĞA</span><h3 data-i18n="plan3Title">Toroslar'a doğru</h3><p data-i18n="plan3Text">Köprülü Kanyon ve çevresindeki dağ manzaraları için tam günlük gezi planla.</p><a href="#kesfet" data-place-link="koprulu-canyon" data-i18n="viewStops">Durakları gör ↗</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section info-section" id="ulasim">
+      <div class="container info-layout">
+        <div class="info-intro"><span class="section-kicker" data-i18n="infoKicker">YOLA ÇIKMADAN ÖNCE</span><h2 data-i18n="infoTitle">İşine yarayacak bilgiler.</h2><p data-i18n="infoLead">Yolculuğunu planlarken resmî kaynakları kontrol et; saatler ve ulaşım düzenleri değişebilir.</p><div class="offline-pill"><span>✓</span><span data-i18n="offlinePill">İlk açılıştan sonra temel içerikler çevrimdışı da saklanır.</span></div><a class="text-link" href="https://www.manavgat.bel.tr/ulasim" target="_blank" rel="noopener" data-i18n="municipalityLink">Belediyenin ulaşım bilgileri ↗</a></div>
+        <div class="info-cards">
+          <article class="info-card"><span class="info-icon">✈</span><div><h3 data-i18n="airportTitle">Havalimanından geliş</h3><p id="airportText">Manavgat Belediyesi'nin ulaşım sayfası Antalya Havalimanı ile Manavgat arasını yaklaşık 52 km olarak belirtir.</p><a href="https://www.manavgat.bel.tr/ulasim" target="_blank" rel="noopener" data-i18n="sourceSee">Kaynağı gör ↗</a></div></article>
+          <article class="info-card"><span class="info-icon">☎</span><div><h3 data-i18n="emergencyTitle">Acil durum</h3><p id="emergencyText">Acil durumlarda Türkiye'nin tek acil çağrı numarası 112'yi arayın.</p><a href="tel:112" data-i18n="call112">112'yi ara ↗</a></div></article>
+          <article class="info-card"><span class="info-icon">☀</span><div><h3 data-i18n="sunTitle">Akdeniz güneşi</h3><p data-i18n="sunText">Özellikle yaz aylarında su, şapka ve güneş koruması bulundur. Açık hava gezilerini sabah veya akşam saatlerine planla.</p></div></article>
+          <article class="info-card"><span class="info-icon">⌖</span><div><h3 data-i18n="mapTitle">Haritayla yolunu bul</h3><p data-i18n="mapText">Her gezi kartında konumu haritada açabilir, yol tarifini telefonundan alabilirsin.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="share-section" id="paylas">
+      <div class="container share-layout">
+        <div><span class="section-kicker" data-i18n="shareKicker">MANAVGAT'I PAYLAŞ</span><h2 data-i18n="shareTitle">Güzel yerler paylaştıkça çoğalır.</h2><p data-i18n="shareLead">Bu rehberi birlikte gezdiğin kişilerle paylaş. Dört dilde içerik, harita bağlantıları ve ziyaret notları cebinde olsun.</p></div>
+        <div class="share-actions"><button class="button button-primary" id="shareGuide" type="button" data-i18n="shareButton">Rehberi paylaş ↗</button><button class="button button-ghost-light" id="copyGuide" type="button" data-i18n="copyLink">Bağlantıyı kopyala</button><span class="share-note" data-i18n="shareNote">QR kodla açılan mobil gezi rehberi</span></div>
+      </div>
+    </section>
+    <section class="sources-section">
+      <div class="container sources-inner"><div><span class="section-kicker" data-i18n="sourcesKicker">GÜVENİLİR BİLGİ, İYİ GEZİ</span><h2 data-i18n="sourcesTitle">Bilginin kaynağını gör.</h2><p data-i18n="sourcesText">Rehberdeki tarihî alan, gezi ve ulaşım bilgileri aşağıdaki kurumların yayımladığı içeriklerden derlenmiştir.</p></div><div class="source-links" id="sourceLinks"><a href="https://www.manavgat.bel.tr/gezi-rehberi" target="_blank" rel="noopener">Manavgat Belediyesi ↗</a><a href="https://muze.gov.tr/muze-detay?DistId=SDO&SectionId=SDO01" target="_blank" rel="noopener">Side Örenyeri · Kültür Bakanlığı ↗</a><a href="https://tanitma.ktb.gov.tr/TR-22740/gezilecek-yerler.html" target="_blank" rel="noopener">Kültür ve Turizm Bakanlığı ↗</a></div></div>
+      <div class="container disclaimer" id="disclaimerText">Bu sayfa bağımsız bir ziyaretçi rehberidir; resmî kurum sitesi değildir. Kart ve kapak görselleri yapay zekâ ile hazırlanmış temsili görsellerdir. Ziyaret saatleri, ücretler, yollar ve ulaşım düzeni değişebilir. Önemli bilgileri ilgili kurumdan teyit edin.</div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="#top"><span class="brand-icon"><svg viewBox="0 0 48 48" fill="none"><path d="M9 11.5A5.5 5.5 0 0 1 14.5 6h19A5.5 5.5 0 0 1 39 11.5v22a4.5 4.5 0 0 1-4.5 4.5h-21A4.5 4.5 0 0 1 9 33.5v-22Z" stroke="currentColor" stroke-width="3"/><path d="M14 13h20v12H14zM14 30h.1M34 30h.1M16 38v3m16-3v3" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span><span class="brand-copy"><strong>MANAVGAT</strong><span>KEŞİF REHBERİ</span></span></a><span data-i18n="footerNote">Manavgat'ı keşfetmenin kolay yolu.</span><span>© <span id="year"></span> MANAVGAT</span></div></footer>
+
+  <div class="modal-backdrop" id="placeModal" hidden>
+    <section class="place-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Close">×</button>
+      <div class="modal-visual" id="modalVisual"><img id="modalImage" src="" alt=""><span id="modalCategory" class="category-label"></span><small class="modal-credit" id="modalCredit"></small></div>
+      <div class="modal-content"><span class="modal-area" id="modalArea"></span><h2 id="modalTitle"></h2><p id="modalSummary" class="modal-summary"></p><p id="modalDescription" class="modal-description"></p><div id="modalFacts" class="modal-facts"></div><div class="modal-tip" id="modalTip"></div><div class="modal-actions"><a class="button button-primary" id="modalMap" target="_blank" rel="noopener" data-i18n="openMap">Haritada aç ↗</a><a class="button button-light" id="modalSource" target="_blank" rel="noopener" data-i18n="officialInfo">Kaynak bilgisi ↗</a></div></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
+
