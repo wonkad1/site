@@ -1,0 +1,733 @@
+{
+  "meta": {
+    "title": "Manavgat Keşif Rehberi",
+    "updatedAt": "2026-11-02",
+    "languages": [
+      "tr",
+      "en",
+      "de",
+      "ru"
+    ],
+    "notice": "Bilgiler resmî ve kurumsal kaynaklardan derlenmiştir. Sezon, ziyaret saatleri, ücretler, deniz koşulları ve erişim bilgileri değişebilir; ziyaret öncesi ilgili kurumu kontrol edin.",
+    "imagePolicy": "Kart ve kapak görselleri yapay zekâ ile hazırlanmış temsili görsellerdir; gerçek konum fotoğrafları olarak sunulmaz."
+  },
+  "sources": [
+    {
+      "id": "municipality-guide",
+      "name": "Manavgat Belediyesi – Gezi Rehberi",
+      "type": "Resmî belediye kaynağı",
+      "url": "https://www.manavgat.bel.tr/gezi-rehberi",
+      "checkedAt": "2026-11-02",
+      "note": "Manavgat Nehri, Manavgat Şelalesi, Manavgat Boğazı, Titreyengöl, Oymapınar Barajı, Köprülü Kanyon, Seleukeia ve Selge hakkında yerel gezi bilgileri."
+    },
+    {
+      "id": "ministry-places",
+      "name": "T.C. Kültür ve Turizm Bakanlığı – Gezilecek Yerler",
+      "type": "Resmî bakanlık kaynağı",
+      "url": "https://tanitma.ktb.gov.tr/TR-22740/gezilecek-yerler.html",
+      "checkedAt": "2026-11-02",
+      "note": "Manavgat Şelalesi, Side, Selge, Seleukeia, Etenna, Alarahan ve Köprülü Kanyon hakkında genel tanıtım bilgileri."
+    },
+    {
+      "id": "side-museum",
+      "name": "T.C. Kültür ve Turizm Bakanlığı – Side Örenyeri",
+      "type": "Resmî müze kaynağı",
+      "url": "https://muze.gov.tr/muze-detay?DistId=SDO&SectionId=SDO01",
+      "checkedAt": "2026-11-02",
+      "note": "Side Örenyeri adresi, yayımlanan ziyaret saatleri, sesli rehber ve tarihî alan açıklaması. Saatler değişebileceğinden ziyaret öncesi kontrol edilmelidir."
+    },
+    {
+      "id": "municipality-transport",
+      "name": "Manavgat Belediyesi – Ulaşım",
+      "type": "Resmî belediye kaynağı",
+      "url": "https://www.manavgat.bel.tr/ulasim",
+      "checkedAt": "2026-11-02",
+      "note": "Antalya Havalimanı ve karayolu ile Manavgat'a erişim hakkında genel bilgi."
+    },
+    {
+      "id": "baka-tourism",
+      "name": "Batı Akdeniz Kalkınma Ajansı – Antalya Turizm",
+      "type": "Kurumsal bölgesel kaynak",
+      "url": "https://baka.gov.tr/antalya-yi-kesfet/turizm",
+      "checkedAt": "2026-11-02",
+      "note": "Side'deki Apollon-Athena Tapınağı, Selge, Manavgat Şelalesi, Köprülü Kanyon ve Tazı Kanyonu gibi turistik değerlerin bölgesel listesi."
+    },
+    {
+      "id": "culture-portal-tazi",
+      "name": "T.C. Kültür ve Turizm Bakanlığı – Kültür Portalı / Tazı Kanyonu",
+      "type": "Resmî kültür ve turizm kaynağı",
+      "url": "https://kulturportali.gov.tr/turkiye/antalya/gezilecekyer/tazi-kanyonu-",
+      "checkedAt": "2026-11-02",
+      "note": "Tazı Kanyonu’nun Manavgat ilçesinde, Köprülü Kanyon Millî Parkı içinde bulunduğunu; yaklaşık 4 km uzunluk ve 300–400 m kaya duvarları bilgisini verir. Fotoğraf sahibi sayfada Tanıtma Genel Müdürlüğü Arşivi, Servet Uygun olarak belirtilir."
+    },
+    {
+      "id": "aa-alarahan",
+      "name": "Anadolu Ajansı – Tarihi İpekyolu üzerindeki bir değer: Alarahan",
+      "type": "Haber / görsel kaynağı",
+      "url": "https://www.aa.com.tr/tr/kultur-sanat/tarihi-ipekyolu-uzerindeki-bir-deger-alarahan/1263889",
+      "checkedAt": "2026-11-02",
+      "note": "Alarahan kervansarayına ilişkin haber ve fotoğraf kaynağı."
+    },
+    {
+      "id": "municipality-beaches",
+      "name": "Manavgat Belediyesi – Mavi Bayraklı Halk Plajları",
+      "type": "Resmî belediye kaynağı",
+      "url": "https://www.manavgat.bel.tr/guncel-haberler/manavgat-belediyesi-ne-ait-mavi-bayrakli-plajlar-goz-kamastiriyor",
+      "checkedAt": "2026-11-02",
+      "note": "Belediyenin Boğaz Otel, Kızılot, Nar Beach 1 ve 3 ile Evrenseki halk plajlarına ilişkin tanıtımı."
+    },
+    {
+      "id": "municipality-smoke-free-beaches",
+      "name": "Manavgat Belediyesi – Dumansız Plaj Uygulaması (2026)",
+      "type": "Resmî belediye kaynağı",
+      "url": "https://www.manavgat.bel.tr/guncel-haberler/manavgat-ta-plajlarda-dumansiz-plaj-uygulamasi-baslatildi",
+      "checkedAt": "2026-11-02",
+      "note": "2026 uygulaması kapsamında Boğaz Otel Halk Plajı, Side Nar Beach 3, Evrenseki ve Gündoğdu plajları belirtiliyor."
+    },
+    {
+      "id": "municipality-kizilagac-beach",
+      "name": "Manavgat Belediyesi – Kızılağaç Halk Plajı",
+      "type": "Resmî belediye kaynağı",
+      "url": "https://www.manavgat.bel.tr/guncel-haberler/manavgat-belediyesi-kizilagac-halk-plaji-hizmete-acildi",
+      "checkedAt": "2026-11-02",
+      "note": "Kızılağaç Halk Plajı açılışı ve duş, tuvalet, soyunma kabini, şezlong, şemsiye ve otopark gibi duyurulan olanaklar."
+    },
+    {
+      "id": "turcev-evrenseki",
+      "name": "TÜRÇEV – Manavgat Belediyesi Evrenseki Halk Plajı",
+      "type": "Türkiye Çevre Eğitim Vakfı / Mavi Bayrak",
+      "url": "https://www.mavibayrak.org.tr/turkiye/plaj.aspx?plaj_refno=1395",
+      "checkedAt": "2026-11-02",
+      "note": "2026 Mavi Bayrak kaydı, sezon bilgisi, toplu taşıma ve deniz suyu analizlerinin yayımlandığı plaj sayfası."
+    },
+    {
+      "id": "turcev-kizilot",
+      "name": "TÜRÇEV – Manavgat Belediyesi Kızılot Halk Plajı",
+      "type": "Türkiye Çevre Eğitim Vakfı / Mavi Bayrak",
+      "url": "https://www.mavibayrak.org.tr/turkiye/plaj.aspx?plaj_refno=1845",
+      "checkedAt": "2026-11-02",
+      "note": "Kızılot Halk Plajı sayfası; sezon ve deniz suyu analizleri yayımlanıyor. Sertifika durumu ayrıca sayfadan kontrol edilmelidir."
+    }
+  ],
+  "places": [
+    {
+      "id": "manavgat-waterfall",
+      "category": "nature",
+      "featured": true,
+      "name": "Manavgat Şelalesi",
+      "area": "Manavgat merkezi çevresi",
+      "distance": "Merkeze yaklaşık 3 km",
+      "mapQuery": "Manavgat Şelalesi Antalya",
+      "image": "assets/images/places/waterfall.webp",
+      "imageCredit": "Yapay zekâ ile hazırlanmış temsili görsel",
+      "imageSource": "https://www.manavgat.bel.tr/gezi-rehberi",
+      "sourceIds": [
+        "municipality-guide",
+        "ministry-places"
+      ],
+      "translations": {
+        "tr": {
+          "name": "Manavgat Şelalesi",
+          "summary": "Manavgat Irmağı'nın geniş bir eşik üzerinden coşkuyla aktığı, ilçe ile özdeşleşmiş doğal durak.",
+          "description": "Şelale, yüksekten dar bir boşluğa düşmek yerine geniş bir hat boyunca akan güçlü su görüntüsüyle tanınır. Çevresinde dinlenme ve yeme-içme noktaları bulunur. Manavgat Belediyesi ve Kültür ve Turizm Bakanlığı kaynakları şelaleyi ilçe merkezine yaklaşık 3 km mesafede tanımlar.",
+          "tip": "Giriş ücreti, ziyaret saatleri ve tesis koşulları dönemsel değişebilir. Gitmeden önce işletmeden teyit edin."
+        },
+        "en": {
+          "name": "Manavgat Waterfall",
+          "summary": "A signature natural stop where the Manavgat River flows over a broad, low cascade.",
+          "description": "The waterfall is known for its wide curtain of flowing water rather than a single tall drop. There are places to rest and eat nearby. Official local and tourism sources place it roughly 3 km from Manavgat centre.",
+          "tip": "Entry fees, opening times and facilities may change seasonally. Check before visiting."
+        },
+        "de": {
+          "name": "Manavgat-Wasserfall",
+          "summary": "Ein bekanntes Naturziel, an dem der Manavgat-Fluss über eine breite Kante strömt.",
+          "description": "Der Wasserfall ist für seinen breiten Wasserstrom bekannt. In der Umgebung gibt es Rast- und Einkehrmöglichkeiten. Offizielle lokale und touristische Quellen nennen ungefähr 3 km Entfernung zum Zentrum von Manavgat.",
+          "tip": "Eintritt, Öffnungszeiten und Einrichtungen können saisonal variieren. Bitte vor dem Besuch prüfen."
+        },
+        "ru": {
+          "name": "Водопад Манавгат",
+          "summary": "Знаковое природное место, где река Манавгат широким потоком переливается через порог.",
+          "description": "Водопад известен широким потоком воды. Рядом есть места для отдыха и питания. По официальным местным и туристическим источникам, он находится примерно в 3 км от центра Манавгата.",
+          "tip": "Стоимость входа, часы работы и услуги могут меняться по сезонам. Уточняйте перед посещением."
+        }
+      },
+      "referenceImageUrl": "https://d10fbf87uv1xiy.cloudfront.net/655/link/21746/166956.jpg",
+      "referenceImageCredit": "Manavgat Belediyesi gezi rehberi",
+      "imageNote": "Bu görsel temsilidir; gerçek konum fotoğrafı değildir."
+    },
+    {
+      "id": "side-ancient-city",
+      "category": "history",
+      "featured": true,
+      "name": "Side Antik Kenti",
+      "area": "Side",
+      "distance": "Manavgat merkezine yaklaşık 7 km",
+      "mapQuery": "Side Antik Kenti Manavgat",
+      "image": "assets/images/places/side-temple.webp",
+      "imageCredit": "Yapay zekâ ile hazırlanmış temsili görsel",
+      "imageSource": "https://muze.gov.tr/muze-detay?DistId=SDO&SectionId=SDO01",
+      "sourceIds": [
+        "side-museum",
+        "ministry-places"
+      ],
+      "hours": {
+        "tr": "Kültür ve Turizm Bakanlığı sayfasında: 08.00–19.00; gişe kapanışı 18.30; her gün açık. Saatler değişebilir.",
+        "en": "The Ministry of Culture and Tourism lists 08:00–19:00; ticket office closes at 18:30; open daily. Hours may change.",
+        "de": "Das Kultur- und Tourismusministerium nennt 08:00–19:00; Kassenschluss 18:30; täglich geöffnet. Zeiten können sich ändern.",
+        "ru": "Министерство культуры и туризма указывает: 08:00–19:00; касса закрывается в 18:30; открыто ежедневно. Часы могут меняться."
+      },
+      "translations": {
+        "tr": {
+          "name": "Side Antik Kenti",
+          "summary": "Antik tiyatro, sütunlu caddeler ve deniz kıyısındaki Apollon Tapınağı ile tarih dolu bir yarımada.",
+          "description": "Side, Manavgat'a yakın tarihî bir yerleşimdir. Antik tiyatrosu, agora alanı, sütunlu caddeleri ve Apollon-Athena tapınaklarıyla öne çıkar. Side Örenyeri için Kültür ve Turizm Bakanlığı'nın sayfasında ziyaret bilgileri ve sesli rehber hizmeti yer alır.",
+          "tip": "Antik alan geniştir; rahat ayakkabı ve yazın güneş koruması kullanın. Güncel giriş koşullarını resmî müze sayfasından kontrol edin."
+        },
+        "en": {
+          "name": "Ancient City of Side",
+          "summary": "A historic peninsula with an ancient theatre, colonnaded streets and the Temple of Apollo by the sea.",
+          "description": "Side is a historic settlement close to Manavgat. Highlights include its ancient theatre, agora, colonnaded streets and the temples of Apollo and Athena. The Ministry of Culture and Tourism publishes visitor information and audio-guide details for the site.",
+          "tip": "The archaeological area is extensive. Wear comfortable shoes and sun protection in summer; check current admission details on the official museum page."
+        },
+        "de": {
+          "name": "Antike Stadt Side",
+          "summary": "Eine historische Halbinsel mit antikem Theater, Säulenstraßen und dem Apollon-Tempel am Meer.",
+          "description": "Side ist eine historische Siedlung nahe Manavgat. Zu den Höhepunkten zählen das antike Theater, die Agora, Säulenstraßen sowie die Tempel des Apollon und der Athena. Das Kulturministerium veröffentlicht Besucherinformationen und Angaben zum Audioguide.",
+          "tip": "Das Ausgrabungsgebiet ist weitläufig. Tragen Sie bequeme Schuhe und im Sommer Sonnenschutz. Aktuelle Eintrittsinformationen bitte auf der offiziellen Museumsseite prüfen."
+        },
+        "ru": {
+          "name": "Античный город Сиде",
+          "summary": "Исторический полуостров с античным театром, колоннадными улицами и храмом Аполлона у моря.",
+          "description": "Сиде — историческое поселение недалеко от Манавгата. Здесь находятся античный театр, агора, колоннадные улицы и храмы Аполлона и Афины. Министерство культуры и туризма публикует информацию для посетителей и сведения об аудиогиде.",
+          "tip": "Археологическая зона довольно большая. Наденьте удобную обувь и используйте защиту от солнца летом; уточните актуальные условия посещения на официальной странице музея."
+        }
+      },
+      "referenceImageUrl": "https://muze.gov.tr/s3/SectionPicture/SP_5af5be78-022b-44fd-be80-2d63d70e9a33.jpg",
+      "referenceImageCredit": "T.C. Kültür ve Turizm Bakanlığı – Side Örenyeri",
+      "imageNote": "Bu görsel temsilidir; gerçek konum fotoğrafı değildir."
+    },
+    {
+      "id": "manavgat-river",
+      "category": "nature",
+      "featured": false,
+      "name": "Manavgat Nehri",
+      "area": "Manavgat şehir merkezi ve çevresi",
+      "distance": "Şehir merkezinden geçer",
+      "mapQuery": "Manavgat Nehri Antalya",
+      "image": "assets/images/places/river-evening.webp",
+      "imageCredit": "Yapay zekâ ile hazırlanmış temsili görsel",
+      "imageSource": "https://www.manavgat.bel.tr/gezi-rehberi",
+      "sourceIds": [
+        "municipality-guide"
+      ],
+      "translations": {
+        "tr": {
+          "name": "Manavgat Nehri",
+          "summary": "Tekne gezileri, nehir kıyısı yürüyüşleri ve serin su manzaralarıyla şehrin doğal omurgası.",
+          "description": "Manavgat Nehri, şehir dokusunun içinden geçerek Akdeniz'e doğru ilerler. Belediye gezi rehberi nehir boyunca günlük tekne gezilerinden ve zengin bitki-hayvan yaşamından söz eder.",
+          "tip": "Tekne turlarının kalkış noktası, süresi ve ücretini tur sağlayıcısından aynı gün teyit edin."
+        },
+        "en": {
+          "name": "Manavgat River",
+          "summary": "The natural heart of the town, with boat trips, riverside walks and cool-water views.",
+          "description": "The Manavgat River flows through the town on its way to the Mediterranean. The municipal travel guide mentions daily boat excursions and rich plant and wildlife along the river.",
+          "tip": "Confirm boat-trip departure points, duration and prices directly with the operator on the day."
+        },
+        "de": {
+          "name": "Manavgat-Fluss",
+          "summary": "Die natürliche Lebensader der Stadt mit Bootsfahrten, Uferwegen und kühlen Wasserblicken.",
+          "description": "Der Manavgat-Fluss fließt durch die Stadt in Richtung Mittelmeer. Der städtische Reiseführer erwähnt tägliche Bootsausflüge sowie eine vielfältige Pflanzen- und Tierwelt.",
+          "tip": "Abfahrtsort, Dauer und Preis einer Bootstour bitte am selben Tag beim Anbieter bestätigen."
+        },
+        "ru": {
+          "name": "Река Манавгат",
+          "summary": "Природная артерия города: прогулки на лодках, набережные и прохладные речные пейзажи.",
+          "description": "Река Манавгат проходит через город по пути к Средиземному морю. Муниципальный путеводитель упоминает ежедневные прогулки на лодках и разнообразную флору и фауну вдоль реки.",
+          "tip": "Место отправления, длительность и стоимость прогулки уточняйте у оператора в день поездки."
+        }
+      },
+      "referenceImageUrl": "https://d10fbf87uv1xiy.cloudfront.net/655/link/21746/166955.jpg",
+      "referenceImageCredit": "Manavgat Belediyesi gezi rehberi",
+      "imageNote": "Bu görsel temsilidir; gerçek konum fotoğrafı değildir."
+    },
+    {
+      "id": "manavgat-bogaz",
+      "category": "nature",
+      "featured": true,
+      "name": "Manavgat Boğazı",
+      "area": "Sorgun",
+      "distance": "Sorgun kıyı bölgesi",
+      "mapQuery": "Manavgat Boğazı Sorgun",
+      "image": "assets/images/hero-manavgat.webp",
+      "imageCredit": "Yapay zekâ ile hazırlanmış temsili görsel",
+      "imageSource": "https://www.manavgat.bel.tr/gezi-rehberi",
+      "sourceIds": [
+        "municipality-guide"
+      ],
+      "translations": {
+        "tr": {
+          "name": "Manavgat Boğazı",
+          "summary": "Nehir ve Akdeniz'in buluştuğu, gün batımı ve doğa gözlemi için güzel bir kıyı alanı.",
+          "description": "Manavgat Nehri'nin denizle buluştuğu Sorgun çevresindeki bu alan; su, sazlık ve kıyı manzaralarıyla bilinir. Belediye gezi rehberi, merkezden Sorgun-Boğaz dolmuşuyla ulaşılabildiğini belirtir.",
+          "tip": "Gün batımı için güzel bir durak olabilir. Sulak alan çevresinde doğaya ve kuşlara saygılı davranın."
+        },
+        "en": {
+          "name": "Manavgat Estuary",
+          "summary": "A scenic coastal area where the river meets the Mediterranean, ideal for sunsets and nature watching.",
+          "description": "This area around Sorgun is where the Manavgat River meets the sea, with water, reed beds and coastal views. The municipal guide says it can be reached by the Sorgun–Boğaz minibus from the centre.",
+          "tip": "A lovely stop for sunset. Please respect the wetland habitat and birds."
+        },
+        "de": {
+          "name": "Manavgat-Flussmündung",
+          "summary": "Ein schöner Küstenbereich, in dem der Fluss ins Mittelmeer mündet – ideal für Sonnenuntergänge.",
+          "description": "In diesem Gebiet bei Sorgun trifft der Manavgat-Fluss auf das Meer. Es bietet Wasser-, Schilf- und Küstenlandschaften. Laut städtischem Reiseführer fährt vom Zentrum ein Minibus Sorgun–Boğaz.",
+          "tip": "Ein schöner Ort für den Sonnenuntergang. Bitte nehmen Sie Rücksicht auf Feuchtgebiet und Vögel."
+        },
+        "ru": {
+          "name": "Устье Манавгата",
+          "summary": "Живописное место, где река встречается со Средиземным морем; особенно красиво на закате.",
+          "description": "В районе Соргун река Манавгат впадает в море. Здесь можно увидеть воду, заросли камыша и прибрежные пейзажи. По муниципальному путеводителю, из центра сюда ходит маршрутка Sorgun–Boğaz.",
+          "tip": "Хорошее место для заката. Бережно относитесь к водно-болотной зоне и птицам."
+        }
+      },
+      "referenceImageUrl": "https://d10fbf87uv1xiy.cloudfront.net/655/link/21746/166957.jpg",
+      "referenceImageCredit": "Manavgat Belediyesi gezi rehberi",
+      "imageNote": "Bu görsel temsilidir; gerçek konum fotoğrafı değildir."
+    },
+    {
+      "id": "titreyengol",
+      "category": "nature",
+      "featured": false,
+      "name": "Titreyengöl",
+      "area": "Sorgun",
+      "distance": "Sorgun turizm bölgesi",
+      "mapQuery": "Titreyengöl Manavgat",
+      "image": "assets/images/places/titreyengol.webp",
+      "imageCredit": "Yapay zekâ ile hazırlanmış temsili görsel",
+      "imageSource": "https://www.manavgat.bel.tr/gezi-rehberi",
+      "sourceIds": [
+        "municipality-guide"
+      ],
+      "translations": {
+        "tr": {
+          "name": "Titreyengöl",
+          "summary": "Göl kıyısı, ağaçlık alanlar ve kuş yaşamıyla sakin bir doğa molası.",
+          "description": "Manavgat Belediyesi'nin gezi rehberi Titreyengöl çevresindeki kuş çeşitliliğinden ve doğal yaşamdan söz eder. Sorgun bölgesinde, sahil ve konaklama alanlarına yakın bir gezi noktasıdır.",
+          "tip": "Sessiz yürüyüş ve doğa gözlemi için tercih edin; kuşları beslemeyin ve çevreyi temiz bırakın."
+        },
+        "en": {
+          "name": "Titreyengöl Lake",
+          "summary": "A peaceful nature break with lakeside scenery, trees and birdlife.",
+          "description": "The Manavgat municipal travel guide highlights the birdlife and natural environment around Titreyengöl. It is in the Sorgun area, close to the coast and accommodation zone.",
+          "tip": "Enjoy a quiet walk and birdwatching; do not feed wildlife and leave no litter."
+        },
+        "de": {
+          "name": "Titreyengöl-See",
+          "summary": "Eine ruhige Naturpause mit Uferlandschaft, Bäumen und Vogelwelt.",
+          "description": "Der Reiseführer der Stadt Manavgat hebt die Vogelwelt und Natur rund um Titreyengöl hervor. Der See liegt im Gebiet Sorgun, nahe der Küste und der Hotelzone.",
+          "tip": "Ideal für einen ruhigen Spaziergang und Vogelbeobachtung. Bitte Tiere nicht füttern und keinen Müll hinterlassen."
+        },
+        "ru": {
+          "name": "Озеро Титреенгёль",
+          "summary": "Спокойное место для отдыха на природе: берег озера, деревья и птицы.",
+          "description": "Муниципальный путеводитель Манавгата отмечает разнообразие птиц и природную среду вокруг Титреенгёля. Озеро находится в районе Соргун, недалеко от побережья и гостиничной зоны.",
+          "tip": "Подходит для тихой прогулки и наблюдения за птицами. Не кормите животных и не оставляйте мусор."
+        }
+      },
+      "referenceImageUrl": "https://d10fbf87uv1xiy.cloudfront.net/655/link/21746/166958.jpg",
+      "referenceImageCredit": "Manavgat Belediyesi gezi rehberi",
+      "imageNote": "Bu görsel temsilidir; gerçek konum fotoğrafı değildir."
+    },
+    {
+      "id": "oymapinar",
+      "category": "nature",
+      "featured": false,
+      "name": "Oymapınar Barajı",
+      "area": "Toroslar / Manavgat Nehri havzası",
+      "distance": "Manavgat'ın kuzeyindeki iç kesimler",
+      "mapQuery": "Oymapınar Barajı Manavgat",
+      "image": "assets/images/places/green-canyon.webp",
+      "imageCredit": "Yapay zekâ ile hazırlanmış temsili görsel",
+      "imageSource": "https://www.manavgat.bel.tr/gezi-rehberi",
+      "sourceIds": [
+        "municipality-guide"
+      ],
+      "translations": {
+        "tr": {
+          "name": "Oymapınar Barajı",
+          "summary": "Manavgat Nehri havzasında, dağ ve su manzaralarıyla öne çıkan baraj gölü bölgesi.",
+          "description": "Oymapınar Barajı, Manavgat Nehri üzerinde yer alır. Çevresindeki dağlık peyzaj ve su manzaraları bölgenin doğa gezilerinin önemli parçalarındandır.",
+          "tip": "Baraj ve çevresindeki tesislere erişim koşulları değişebilir. Özel alanlara izinsiz girmeyin; tur veya tekne etkinliği rezervasyonunu sağlayıcıdan teyit edin."
+        },
+        "en": {
+          "name": "Oymapınar Dam",
+          "summary": "A reservoir area in the Manavgat River basin, known for mountain and water scenery.",
+          "description": "Oymapınar Dam is located on the Manavgat River. Its mountainous landscape and reservoir views are among the area's nature-trip highlights.",
+          "tip": "Access rules for the dam and nearby facilities may vary. Do not enter restricted areas; confirm any tour or boat activity with the operator."
+        },
+        "de": {
+          "name": "Oymapınar-Staudamm",
+          "summary": "Ein Stauseegebiet im Einzugsgebiet des Manavgat-Flusses mit Berg- und Wasserblicken.",
+          "description": "Der Oymapınar-Staudamm liegt am Manavgat-Fluss. Die Berglandschaft und der Blick auf den Stausee gehören zu den Naturhighlights der Region.",
+          "tip": "Zugang zu Staudamm und Einrichtungen kann eingeschränkt sein. Betreten Sie keine Sperrbereiche und bestätigen Sie Touren beim Anbieter."
+        },
+        "ru": {
+          "name": "Плотина Оймапынар",
+          "summary": "Водохранилище в бассейне реки Манавгат с горными и водными пейзажами.",
+          "description": "Плотина Оймапынар расположена на реке Манавгат. Горный ландшафт и виды водохранилища — одни из природных достопримечательностей района.",
+          "tip": "Условия доступа к плотине и объектам рядом могут меняться. Не входите в закрытые зоны; заранее уточняйте туры у организатора."
+        }
+      },
+      "referenceImageUrl": "https://d10fbf87uv1xiy.cloudfront.net/655/link/21746/166959.jpg",
+      "referenceImageCredit": "Manavgat Belediyesi gezi rehberi",
+      "imageNote": "Bu görsel temsilidir; gerçek konum fotoğrafı değildir."
+    },
+    {
+      "id": "koprulu-canyon",
+      "category": "adventure",
+      "featured": true,
+      "name": "Köprülü Kanyon Millî Parkı",
+      "area": "Beşkonak",
+      "distance": "Manavgat'tan yaklaşık 60 km",
+      "mapQuery": "Köprülü Kanyon Milli Parkı Beşkonak",
+      "image": "assets/images/places/rafting.webp",
+      "imageCredit": "Yapay zekâ ile hazırlanmış temsili görsel",
+      "imageSource": "https://www.manavgat.bel.tr/gezi-rehberi",
+      "sourceIds": [
+        "municipality-guide",
+        "ministry-places",
+        "baka-tourism"
+      ],
+      "translations": {
+        "tr": {
+          "name": "Köprülü Kanyon Millî Parkı",
+          "summary": "Köprüçay, yüksek kanyon duvarları, tarihî köprüler ve açık hava etkinlikleri.",
+          "description": "Toroslar'ın eteklerindeki millî park; Köprüçay Nehri, kanyon vadisi, sedir ormanları ve Roma dönemi köprüleriyle tanınır. Rafting gibi etkinlikler bölgede sunulabilir ancak hizmet ve koşullar operatöre bağlıdır.",
+          "tip": "Manavgat'tan günübirlik gezi planlayın. Rafting veya diğer aktivitelerde lisanslı sağlayıcı, hava/akarsu koşulları ve güvenlik ekipmanını önceden kontrol edin."
+        },
+        "en": {
+          "name": "Köprülü Canyon National Park",
+          "summary": "The Köprüçay River, dramatic canyon walls, historic bridges and outdoor adventures.",
+          "description": "At the foothills of the Taurus Mountains, the national park is known for the Köprüçay River, canyon valley, cedar forests and Roman-era bridges. Activities such as rafting may be offered by local operators; availability and conditions vary.",
+          "tip": "Plan this as a day trip from Manavgat. For rafting or other activities, check the licensed operator, river/weather conditions and safety equipment in advance."
+        },
+        "de": {
+          "name": "Nationalpark Köprülü Kanyon",
+          "summary": "Der Fluss Köprüçay, steile Schluchtwände, historische Brücken und Outdoor-Erlebnisse.",
+          "description": "Am Fuß des Taurusgebirges liegt der Nationalpark mit dem Fluss Köprüçay, einer Schlucht, Zedernwäldern und Brücken aus römischer Zeit. Aktivitäten wie Rafting können von lokalen Anbietern angeboten werden; Verfügbarkeit und Bedingungen variieren.",
+          "tip": "Planen Sie einen Tagesausflug ab Manavgat. Prüfen Sie bei Rafting den zugelassenen Anbieter, Wetter- und Flussbedingungen sowie Sicherheitsausrüstung."
+        },
+        "ru": {
+          "name": "Национальный парк Кёпрюлю-Каньон",
+          "summary": "Река Кёпрючай, высокие стены каньона, исторические мосты и активный отдых.",
+          "description": "Национальный парк у подножия Таврских гор известен рекой Кёпрючай, каньоном, кедровыми лесами и римскими мостами. Местные операторы могут предлагать рафтинг; наличие услуг и условия меняются.",
+          "tip": "Планируйте поездку на целый день из Манавгата. Перед рафтингом проверьте оператора, погодные и речные условия, а также снаряжение безопасности."
+        }
+      },
+      "referenceImageUrl": "https://d10fbf87uv1xiy.cloudfront.net/655/link/21746/166960.jpg",
+      "referenceImageCredit": "Manavgat Belediyesi gezi rehberi",
+      "imageNote": "Bu görsel temsilidir; gerçek konum fotoğrafı değildir."
+    },
+    {
+      "id": "selge",
+      "category": "history",
+      "featured": false,
+      "name": "Selge Antik Kenti",
+      "area": "Altınkaya / Toroslar",
+      "distance": "Köprülü Kanyon iç kesimleri",
+      "mapQuery": "Selge Antik Kenti Altınkaya Antalya",
+      "image": "assets/images/places/selge.webp",
+      "imageCredit": "Yapay zekâ ile hazırlanmış temsili görsel",
+      "imageSource": "https://www.manavgat.bel.tr/gezi-rehberi",
+      "sourceIds": [
+        "municipality-guide",
+        "ministry-places",
+        "baka-tourism"
+      ],
+      "translations": {
+        "tr": {
+          "name": "Selge Antik Kenti",
+          "summary": "Toroslar'ın yükseklerinde tiyatrosu ve dağ manzarasıyla dikkat çeken antik kent.",
+          "description": "Selge, Köprüçay yakınlarında, Toroslar'ın güney yamacında kurulmuş antik bir Pisidya kentidir. Tiyatro, stadyum, agora ve tapınak kalıntılarıyla bilinir. Köprülü Kanyon üzerinden virajlı dağ yolu ile ulaşılır.",
+          "tip": "Dağ yolu virajlıdır; sürüş ve hava koşullarını dikkate alın. Rahat ayakkabı, su ve güneş koruması alın."
+        },
+        "en": {
+          "name": "Ancient City of Selge",
+          "summary": "An ancient mountain city in the Taurus range, known for its theatre and mountain views.",
+          "description": "Selge was an ancient Pisidian city on the southern slopes of the Taurus Mountains near the Köprüçay River. Remains include a theatre, stadium, agora and temples. Access is via a winding mountain road through Köprülü Canyon.",
+          "tip": "The mountain road is winding; consider driving and weather conditions. Bring comfortable shoes, water and sun protection."
+        },
+        "de": {
+          "name": "Antike Stadt Selge",
+          "summary": "Eine antike Bergstadt im Taurusgebirge mit Theater und eindrucksvoller Bergkulisse.",
+          "description": "Selge war eine antike pisidische Stadt am Südhang des Taurusgebirges nahe dem Fluss Köprüçay. Zu den Überresten gehören Theater, Stadion, Agora und Tempel. Die Zufahrt erfolgt über eine kurvenreiche Bergstraße durch den Köprülü-Kanyon.",
+          "tip": "Die Bergstraße ist kurvenreich. Beachten Sie Fahr- und Wetterbedingungen und nehmen Sie bequeme Schuhe, Wasser und Sonnenschutz mit."
+        },
+        "ru": {
+          "name": "Античный город Сельге",
+          "summary": "Древний горный город в Таврских горах с театром и красивыми видами.",
+          "description": "Сельге — древний писидийский город на южном склоне Таврских гор возле реки Кёпрючай. Здесь сохранились театр, стадион, агора и храмы. Дорога проходит по извилистому горному маршруту через каньон Кёпрюлю.",
+          "tip": "Горная дорога извилистая; учитывайте погоду и условия вождения. Возьмите удобную обувь, воду и защиту от солнца."
+        }
+      },
+      "referenceImageUrl": "https://d10fbf87uv1xiy.cloudfront.net/655/link/21746/166962.jpg",
+      "referenceImageCredit": "Manavgat Belediyesi gezi rehberi",
+      "imageNote": "Bu görsel temsilidir; gerçek konum fotoğrafı değildir."
+    },
+    {
+      "id": "seleukeia",
+      "category": "history",
+      "featured": false,
+      "name": "Seleukeia Antik Kenti",
+      "area": "Şıhlar çevresi",
+      "distance": "Manavgat'ın kuzeybatısındaki dağlık bölge",
+      "mapQuery": "Seleukeia Antik Kenti Şıhlar Manavgat",
+      "image": "assets/images/places/seleukeia.webp",
+      "imageCredit": "Yapay zekâ ile hazırlanmış temsili görsel",
+      "imageSource": "https://www.manavgat.bel.tr/gezi-rehberi",
+      "sourceIds": [
+        "municipality-guide",
+        "ministry-places"
+      ],
+      "translations": {
+        "tr": {
+          "name": "Seleukeia Antik Kenti",
+          "summary": "Çam ormanları ve yüksek konumuyla çevre ovaya bakan tarihî yerleşim.",
+          "description": "Seleukeia kalıntıları Manavgat'ın kuzeybatısında, Şıhlar çevresindeki dağlık alanda bulunur. Belediye ve Kültür ve Turizm Bakanlığı gezi sayfaları kentin agorası, bazilikası, sarnıçları ve mozaik buluntularından söz eder.",
+          "tip": "Kırsal ve dağlık alana giden yol koşullarını önceden kontrol edin. Alanın ziyaret düzeni ve yönlendirmesi için yerel bilgi alın."
+        },
+        "en": {
+          "name": "Ancient City of Seleukeia",
+          "summary": "A historic hilltop settlement overlooking the plain, surrounded by pine forests.",
+          "description": "The remains of Seleukeia are in the mountainous Şıhlar area northwest of Manavgat. Municipal and Ministry travel pages mention its agora, basilica, cisterns and mosaics found during excavations.",
+          "tip": "Check rural road conditions before setting out. Ask locally about access and visitor arrangements."
+        },
+        "de": {
+          "name": "Antike Stadt Seleukeia",
+          "summary": "Eine historische Höhenlage mit Blick über die Ebene, umgeben von Pinienwäldern.",
+          "description": "Die Überreste von Seleukeia liegen im bergigen Gebiet Şıhlar nordwestlich von Manavgat. Städtische und ministerielle Reiseseiten erwähnen Agora, Basilika, Zisternen und bei Ausgrabungen gefundene Mosaike.",
+          "tip": "Prüfen Sie vorab die Bedingungen der Landstraße. Informieren Sie sich vor Ort über Zugang und Besuchsmöglichkeiten."
+        },
+        "ru": {
+          "name": "Античный город Селеукия",
+          "summary": "Историческое поселение на возвышенности с видом на равнину, среди сосновых лесов.",
+          "description": "Руины Селеукии находятся в гористой местности Шыхлар к северо-западу от Манавгата. Муниципальный путеводитель и материалы министерства упоминают агору, базилику, цистерны и мозаики, найденные при раскопках.",
+          "tip": "Заранее проверьте состояние сельской дороги. На месте уточните доступ и условия посещения."
+        }
+      },
+      "referenceImageUrl": "https://d10fbf87uv1xiy.cloudfront.net/655/link/21746/166961.jpg",
+      "referenceImageCredit": "Manavgat Belediyesi gezi rehberi",
+      "imageNote": "Bu görsel temsilidir; gerçek konum fotoğrafı değildir."
+    },
+    {
+      "id": "tazy-canyon",
+      "category": "adventure",
+      "featured": true,
+      "name": "Tazı Kanyonu",
+      "area": "Köprülü Kanyon bölgesi",
+      "distance": "Manavgat'ın iç kesimleri",
+      "mapQuery": "Tazı Kanyonu Manavgat Antalya",
+      "image": "assets/images/places/tazy-canyon.webp",
+      "imageCredit": "Yapay zekâ ile hazırlanmış temsili görsel",
+      "imageSource": "https://kulturportali.gov.tr/turkiye/antalya/gezilecekyer/tazi-kanyonu-",
+      "sourceIds": [
+        "culture-portal-tazi",
+        "baka-tourism"
+      ],
+      "translations": {
+        "tr": {
+          "name": "Tazı Kanyonu",
+          "summary": "Manavgat'ın iç kesimlerinde, yüksek kayalık manzaralarıyla bilinen doğa noktası.",
+          "description": "Tazı Kanyonu, Manavgat ilçesinde ve Köprülü Kanyon Millî Parkı sınırları içindedir. Kültür Portalı kanyonu yaklaşık 4 km uzunluğunda, 300–400 metre yüksekliğinde dik kayalıklarla tanımlar. Bilgelik Vadisi adıyla da bilinir.",
+          "tip": "Uçurum kenarlarında güvenlik çizgilerini aşmayın. Gitmeden önce yol durumunu ve erişim koşullarını kontrol edin."
+        },
+        "en": {
+          "name": "Tazı Canyon",
+          "summary": "A nature viewpoint in inland Manavgat, known for its dramatic high rock scenery.",
+          "description": "Tazı Canyon is in Manavgat district, within Köprülü Canyon National Park. The Turkish Culture Portal describes it as approximately 4 km long, with steep rock walls rising 300–400 metres. It is also known as the Valley of Wisdom.",
+          "tip": "Stay behind safety barriers near cliffs. Check road and access conditions before travelling."
+        },
+        "de": {
+          "name": "Tazı-Kanyon",
+          "summary": "Ein Naturziel im Landesinneren von Manavgat mit eindrucksvollen hohen Felswänden.",
+          "description": "Der Tazı-Kanyon liegt im Landkreis Manavgat innerhalb des Nationalparks Köprülü Kanyon. Das türkische Kulturportal beschreibt ihn als etwa 4 km lang, mit steilen Felswänden von 300–400 Metern Höhe. Er ist auch als Tal der Weisheit bekannt.",
+          "tip": "Halten Sie an Klippen Abstand und bleiben Sie hinter Sicherheitsabsperrungen. Prüfen Sie Zufahrt und Straßenlage vor der Fahrt."
+        },
+        "ru": {
+          "name": "Каньон Тазы",
+          "summary": "Природная смотровая точка во внутренних районах Манавгата с высокими скалами.",
+          "description": "Каньон Тазы находится в районе Манавгат, на территории национального парка Кёпрюлю-Каньон. Турецкий культурный портал указывает длину около 4 км и отвесные скалы высотой 300–400 метров. Его также называют Долиной мудрости.",
+          "tip": "Не подходите к краям обрывов и не обходите ограждения. Перед поездкой уточните состояние дороги и доступ."
+        }
+      },
+      "referenceImageUrl": "https://kulturportali.gov.tr/contents/images/ANTALYA--TAZI%20KANYONU-SERVET%20UYGUN%2020190514_5%20kopya.jpg",
+      "referenceImageCredit": "Tanıtma Genel Müdürlüğü Arşivi · Servet Uygun",
+      "imageNote": "Bu görsel temsilidir; gerçek konum fotoğrafı değildir."
+    },
+    {
+      "id": "alarahan",
+      "category": "history",
+      "featured": false,
+      "name": "Alarahan",
+      "area": "Alara bölgesi",
+      "distance": "Manavgat'ın batı yönündeki tarihî durak",
+      "mapQuery": "Alarahan Manavgat Antalya",
+      "image": "assets/images/places/alarahan.webp",
+      "imageCredit": "Yapay zekâ ile hazırlanmış temsili görsel",
+      "imageSource": "https://www.aa.com.tr/tr/kultur-sanat/tarihi-ipekyolu-uzerindeki-bir-deger-alarahan/1263889",
+      "sourceIds": [
+        "ministry-places",
+        "aa-alarahan"
+      ],
+      "translations": {
+        "tr": {
+          "name": "Alarahan",
+          "summary": "Selçuklu döneminden kalan, tarihî ticaret yollarını hatırlatan kervansaray.",
+          "description": "Alarahan, Kültür ve Turizm Bakanlığı'nın Manavgat çevresi gezi sayfasında 13. yüzyılda Selçuklular döneminde inşa edilmiş bir kervansaray olarak tanıtılır. Tarihî yapı, Konya ile Akdeniz kıyıları arasındaki ticaret yoluyla ilişkilidir.",
+          "tip": "Ziyaret edilebilir alanlar ve giriş koşulları dönemsel değişebilir. Gitmeden önce güncel durumu kontrol edin."
+        },
+        "en": {
+          "name": "Alarahan Caravanserai",
+          "summary": "A Seljuk-era caravanserai recalling the historic trade routes of the region.",
+          "description": "The Ministry of Culture and Tourism describes Alarahan as a 13th-century Seljuk caravanserai associated with the historic trade route between Konya and the Mediterranean coast.",
+          "tip": "Visitor access and entry conditions may vary. Check current arrangements before travelling."
+        },
+        "de": {
+          "name": "Karawanserei Alarahan",
+          "summary": "Eine seldschukische Karawanserei, die an die historischen Handelswege der Region erinnert.",
+          "description": "Das Kulturministerium beschreibt Alarahan als seldschukische Karawanserei aus dem 13. Jahrhundert, die mit der historischen Handelsroute zwischen Konya und der Mittelmeerküste verbunden ist.",
+          "tip": "Zugangs- und Eintrittsbedingungen können variieren. Bitte vor der Fahrt prüfen."
+        },
+        "ru": {
+          "name": "Караван-сарай Алара-хан",
+          "summary": "Караван-сарай сельджукского периода, напоминающий об исторических торговых путях региона.",
+          "description": "Министерство культуры и туризма описывает Алара-хан как сельджукский караван-сарай XIII века, связанный с историческим торговым путём между Коньей и побережьем Средиземного моря.",
+          "tip": "Условия доступа и посещения могут меняться. Перед поездкой уточните актуальную информацию."
+        }
+      },
+      "referenceImageUrl": "https://web-cdnprod.aa.com.tr/uploads/Contents/2018/09/25/thumbs_b_c_0e56486c40a0131d4b710adf9cf7e975.jpg",
+      "referenceImageCredit": "Anadolu Ajansı",
+      "imageNote": "Bu görsel temsilidir; gerçek konum fotoğrafı değildir."
+    },
+    {
+      "id": "manavgat-public-beaches",
+      "category": "beach",
+      "featured": false,
+      "name": "Manavgat Halk Plajları",
+      "area": "Sorgun, Side, Evrenseki, Gündoğdu, Kızılot ve Kızılağaç",
+      "distance": "Plaja göre değişir",
+      "mapQuery": "Manavgat halk plajları Antalya",
+      "image": "assets/images/places/beach.webp",
+      "imageCredit": "Yapay zekâ ile hazırlanmış temsili görsel",
+      "imageSource": "https://www.manavgat.bel.tr/guncel-haberler/manavgat-belediyesi-ne-ait-mavi-bayrakli-plajlar-goz-kamastiriyor",
+      "sourceIds": [
+        "municipality-beaches",
+        "municipality-smoke-free-beaches",
+        "municipality-kizilagac-beach",
+        "turcev-evrenseki",
+        "turcev-kizilot"
+      ],
+      "beachOptions": [
+        {
+          "name": "Boğaz Otel Halk Plajı",
+          "area": "Sorgun",
+          "mapQuery": "Boğaz Otel Halk Plajı Manavgat"
+        },
+        {
+          "name": "Nar Beach 1 Halk Plajı",
+          "area": "Side",
+          "mapQuery": "Nar Beach 1 Halk Plajı Side Manavgat"
+        },
+        {
+          "name": "Nar Beach 2 Halk Plajı",
+          "area": "Side",
+          "mapQuery": "Nar Beach 2 Halk Plajı Side Manavgat"
+        },
+        {
+          "name": "Nar Beach 3 Halk Plajı",
+          "area": "Side",
+          "mapQuery": "Nar Beach 3 Halk Plajı Side Manavgat"
+        },
+        {
+          "name": "Evrenseki Halk Plajı",
+          "area": "Evrenseki",
+          "mapQuery": "Evrenseki Halk Plajı Manavgat"
+        },
+        {
+          "name": "Gündoğdu Halk Plajı",
+          "area": "Gündoğdu",
+          "mapQuery": "Gündoğdu Halk Plajı Manavgat"
+        },
+        {
+          "name": "Çolaklı 1 Halk Plajı",
+          "area": "Çolaklı",
+          "mapQuery": "Çolaklı 1 Halk Plajı Manavgat"
+        },
+        {
+          "name": "Çolaklı 2 Halk Plajı",
+          "area": "Çolaklı",
+          "mapQuery": "Çolaklı 2 Halk Plajı Manavgat"
+        },
+        {
+          "name": "Kızılot Halk Plajı",
+          "area": "Kızılot",
+          "mapQuery": "Kızılot Halk Plajı Manavgat"
+        },
+        {
+          "name": "Kızılağaç Halk Plajı",
+          "area": "Kızılağaç",
+          "mapQuery": "Kızılağaç Halk Plajı Manavgat"
+        }
+      ],
+      "translations": {
+        "tr": {
+          "name": "Manavgat Halk Plajları",
+          "summary": "Sorgun’dan Side’ye, Evrenseki’den Kızılot ve Kızılağaç’a uzanan belediye halk plajlarını keşfet.",
+          "description": "Manavgat Belediyesi; Boğaz Otel, Nar Beach, Evrenseki, Gündoğdu, Çolaklı, Kızılot ve Kızılağaç gibi farklı kıyı bölgelerinde halk plajları duyuruyor. Plajların hizmetleri, sezonu ve uygulamaları plaja ve tarihe göre değişebilir. Bazı plajlar için belediye ve TÜRÇEV sayfalarında Mavi Bayrak veya çevre uygulaması bilgileri yayımlanıyor.",
+          "tip": "Plajların açık olduğu sezonu, duş/tuvalet gibi hizmetleri ve deniz koşullarını gitmeden önce ilgili belediye veya TÜRÇEV sayfasından kontrol et. 2026 Dumansız Plaj uygulaması Boğaz Otel, Side Nar Beach 3, Evrenseki ve Gündoğdu plajlarında duyuruldu."
+        },
+        "en": {
+          "name": "Manavgat Public Beaches",
+          "summary": "Explore municipal public beaches from Sorgun and Side to Evrenseki, Kızılot and Kızılağaç.",
+          "description": "Manavgat Municipality lists public beaches in several coastal areas, including Boğaz Otel, Nar Beach, Evrenseki, Gündoğdu, Çolaklı, Kızılot and Kızılağaç. Facilities, season dates and local rules can vary by beach and date. Municipal and TÜRÇEV pages publish Blue Flag or environmental-program information for selected beaches.",
+          "tip": "Check seasonal opening, facilities such as showers and toilets, and sea conditions with the municipality or TÜRÇEV before travelling. The municipality announced its 2026 smoke-free beach programme for Boğaz Otel, Side Nar Beach 3, Evrenseki and Gündoğdu."
+        },
+        "de": {
+          "name": "Öffentliche Strände von Manavgat",
+          "summary": "Entdecken Sie öffentliche Strände von Sorgun und Side bis Evrenseki, Kızılot und Kızılağaç.",
+          "description": "Die Stadtverwaltung Manavgat führt öffentliche Strände in mehreren Küstengebieten auf, darunter Boğaz Otel, Nar Beach, Evrenseki, Gündoğdu, Çolaklı, Kızılot und Kızılağaç. Ausstattung, Saisonzeiten und örtliche Regeln können je nach Strand und Datum variieren. Für ausgewählte Strände veröffentlichen die Stadtverwaltung und TÜRÇEV Informationen zur Blauen Flagge oder zu Umweltprogrammen.",
+          "tip": "Prüfen Sie vor der Fahrt die Saison, Einrichtungen wie Duschen und Toiletten sowie die Meeresbedingungen bei der Stadtverwaltung oder TÜRÇEV. Das rauchfreie Strandprogramm 2026 wurde für Boğaz Otel, Side Nar Beach 3, Evrenseki und Gündoğdu angekündigt."
+        },
+        "ru": {
+          "name": "Общественные пляжи Манавгата",
+          "summary": "Откройте для себя муниципальные пляжи от Соргун и Сиде до Эвренсеки, Кызылота и Кызылагача.",
+          "description": "Муниципалитет Манавгата указывает общественные пляжи в нескольких прибрежных районах, включая Boğaz Otel, Nar Beach, Эвренсеки, Гюндогду, Чолаклы, Кызылот и Кызылагач. Услуги, сезон работы и местные правила могут различаться в зависимости от пляжа и даты. Муниципалитет и TÜRÇEV публикуют сведения о «Голубом флаге» и экологических программах для отдельных пляжей.",
+          "tip": "Перед поездкой уточните сезон, наличие душевых и туалетов, а также состояние моря на сайтах муниципалитета или TÜRÇEV. О программе пляжей без табачного дыма на 2026 год объявлено для Boğaz Otel, Side Nar Beach 3, Эвренсеки и Гюндогду."
+        }
+      },
+      "referenceImageUrl": "https://d10fbf87uv1xiy.cloudfront.net/655/kicerik/47321/346602.jpg",
+      "referenceImageCredit": "Manavgat Belediyesi",
+      "imageNote": "Bu görsel temsilidir; gerçek konum fotoğrafı değildir."
+    }
+  ],
+  "essentials": {
+    "airport": {
+      "tr": "Manavgat Belediyesi'nin ulaşım sayfası, Antalya Havalimanı ile Manavgat arasını yaklaşık 52 km olarak belirtir. Taksi, aktarmalı otobüs ve bazı havayollarının servis seçenekleri listelenir.",
+      "en": "Manavgat Municipality lists the distance to Antalya Airport as approximately 52 km. Taxi, connecting buses and some airline shuttles are mentioned.",
+      "de": "Die Stadtverwaltung Manavgat gibt die Entfernung zum Flughafen Antalya mit etwa 52 km an. Genannt werden Taxi, Anschlussbusse und Shuttle-Angebote einiger Fluggesellschaften.",
+      "ru": "Муниципалитет Манавгата указывает расстояние до аэропорта Антальи около 52 км. Упоминаются такси, автобусы с пересадкой и шаттлы некоторых авиакомпаний."
+    },
+    "emergency": {
+      "tr": "Acil durumlarda Türkiye'nin tek acil çağrı numarası 112'yi arayın.",
+      "en": "For emergencies in Türkiye, call 112.",
+      "de": "In Notfällen in der Türkei wählen Sie 112.",
+      "ru": "В экстренной ситуации в Турции звоните по номеру 112."
+    },
+    "disclaimer": {
+      "tr": "Bu sayfa bağımsız bir ziyaretçi rehberidir; resmî kurum sitesi değildir. Ziyaret saatleri, ücretler, yollar ve ulaşım düzeni değişebilir. Önemli bilgileri ilgili kurumdan teyit edin.",
+      "en": "This is an independent visitor guide, not an official government website. Opening times, fees, road access and transport arrangements may change. Confirm important details with the relevant authority.",
+      "de": "Dies ist ein unabhängiger Besucherführer und keine offizielle Behördenseite. Öffnungszeiten, Gebühren, Straßenzugang und Verkehr können sich ändern. Bitte wichtige Angaben bei der zuständigen Stelle bestätigen.",
+      "ru": "Это независимый путеводитель, а не официальный сайт учреждения. Часы работы, стоимость, доступ к дорогам и транспорт могут меняться. Уточняйте важную информацию у соответствующих организаций."
+    }
+  }
+}
