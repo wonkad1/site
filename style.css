@@ -69,3 +69,119 @@ body{background:#fff8ef;color:#10313d;font-family:Inter,ui-sans-serif,system-ui,
 @media(max-width:980px){.places-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.flavour-layout{gap:30px}}
 @media(max-width:700px){.hero{min-height:650px}.hero-image{background-position:60% center}.hero-shade{background:linear-gradient(90deg,rgba(4,34,47,.93),rgba(4,34,47,.64)),linear-gradient(0deg,rgba(4,34,47,.58),transparent 55%)}.section{padding:68px 0}.places-grid{grid-template-columns:1fr;gap:17px}.place-image-wrap{height:235px}.place-card p{min-height:0}.flavour-section{padding:55px 0}.flavour-layout{grid-template-columns:1fr;gap:25px}.flavour-photo{height:245px}.flavour-copy h2{font-size:36px}.plan-card{grid-template-columns:105px 1fr}.main-nav{background:#083744;border-color:#ffffff33}.main-nav a{color:#eafffa;border-color:#ffffff18}.quick-grid{background:#fff}.quick-item{border-color:#f2e4d7}}
 @media(min-width:701px){.place-card:nth-child(3n+2){transform:translateY(12px)}.place-card:nth-child(3n+2):hover{transform:translateY(3px)}}
+
+/* Mobile-first finishing layer: warm Turkish coast colors, clearer touch targets, and a thumb-friendly dock. */
+:root{--hotel-accent:#e65d43;--sunlight:#ffd16b;--river:#22d2c1}
+html{scroll-padding-top:96px}
+::selection{background:#ffd16b;color:#183b42}
+:focus-visible{outline:3px solid #ffc45b;outline-offset:3px}
+.hero{isolation:isolate}
+.hero:before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(circle at 78% 26%,#ffd16b2b 0 1px,transparent 28%),linear-gradient(135deg,#e95f4012,transparent 42%)}
+.hero-content{z-index:2}
+.hero-bottom-line{z-index:2}
+.hero h1 em{color:var(--sunlight);text-shadow:0 0 28px #ffc95b30}
+.eyebrow{background:#fff2df16;border-color:#ffd16b55;backdrop-filter:blur(10px)}
+.eyebrow-dot{background:var(--sunlight);box-shadow:0 0 0 5px #ffd16b25}
+.button{position:relative;isolation:isolate;overflow:hidden;min-height:48px;border-radius:15px;transition:transform .22s ease,box-shadow .22s ease,background .22s ease}
+.button:after{content:"";position:absolute;inset:-60% auto -60% -42%;z-index:-1;width:30%;transform:rotate(22deg);background:linear-gradient(90deg,transparent,#fff8c7a8,transparent);transition:left .65s ease}
+.button:hover:after{left:120%}
+.button-primary{background:linear-gradient(135deg,#ffdb72 0%,#ffad49 52%,#f47b47 100%);box-shadow:0 12px 26px #fb8c443d,0 2px 0 #fff5b45c inset}
+.button-primary:hover{transform:translateY(-3px) scale(1.015);box-shadow:0 17px 32px #fb8c4460,0 2px 0 #fff5b45c inset}
+.button:active{transform:scale(.975)}
+.hotel-welcome[hidden]{display:none}
+.hotel-welcome{display:flex;align-items:center;gap:13px;max-width:540px;margin-top:25px;padding:13px 15px;border:1px solid #ffffff38;border-radius:18px;background:linear-gradient(110deg,#ffffff1d,#ffffff0a);box-shadow:0 12px 34px #001a2d30;backdrop-filter:blur(13px);animation:welcome-in .55s cubic-bezier(.2,.8,.2,1) both}
+.hotel-welcome-mark{flex:0 0 40px;width:40px;height:40px;display:grid;place-items:center;border-radius:13px;background:var(--hotel-accent);color:white;font-size:21px;box-shadow:0 7px 18px #0002}
+.hotel-welcome-copy{min-width:0;display:grid;line-height:1.25;gap:3px}
+.hotel-welcome-copy small{color:#ffdb8f;font-size:8px;font-weight:900;letter-spacing:.14em}
+.hotel-welcome-copy strong{color:#fff;font:800 14px Manrope,sans-serif;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hotel-welcome-copy>span{color:#d6ebe7;font-size:10px}
+.hotel-welcome-tag{margin-left:auto;padding:7px 9px;border:1px solid #ffd16b57;border-radius:999px;color:#ffda88;font-size:8px;font-weight:900;letter-spacing:.08em;white-space:nowrap}
+body[data-hotel] .brand-icon{background:linear-gradient(135deg,#fff0c9,var(--hotel-accent));color:#382c25}
+.mobile-dock{display:none}
+@keyframes welcome-in{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:700px){
+  body{padding-bottom:calc(82px + env(safe-area-inset-bottom))}
+  .site-header{height:68px}
+  .nav-wrap{gap:10px}
+  .brand{gap:9px}
+  .brand-icon{width:40px;height:40px;border-radius:13px}
+  .brand-icon svg{width:26px;height:26px}
+  .nav-actions{gap:7px}
+  .language-picker select{min-height:42px;padding:8px 10px;border-radius:13px;background:#ffffff12;border-color:#ffffff2c;color:#fff}
+  .language-picker select option{color:#123c46;background:#fff}
+  .menu-toggle{width:42px;height:42px;background:#ffffff12;border-color:#ffffff2c}
+  .menu-toggle span{background:#fff}
+  .main-nav{top:64px;left:12px;right:12px;padding:10px;background:#073541f5;border-color:#ffffff25;box-shadow:0 20px 45px #001b2770}
+  .main-nav a{min-height:47px;display:flex;align-items:center;padding:12px;border-bottom-color:#ffffff18}
+  .hero{min-height:clamp(610px,calc(100svh - 170px),700px);align-items:stretch}
+  .hero-image{background-position:61% center;transform:scale(1.04)}
+  .hero-shade{background:linear-gradient(90deg,#042a38ed 0%,#042a38b8 58%,#042a3866 100%),linear-gradient(0deg,#042a38c2,transparent 65%)}
+  .hero-content{padding:56px 0 83px}
+  .hero-copy{max-width:560px}
+  .hero h1{font-size:clamp(48px,13.2vw,66px);line-height:.99;letter-spacing:-.065em}
+  .hero-lead{font-size:14px;line-height:1.65;max-width:34ch;margin-top:15px;color:#e0efec}
+  .hero-actions{display:grid;grid-template-columns:1fr;gap:10px;margin-top:22px;max-width:360px}
+  .hero-actions .button{width:100%;justify-content:center;min-height:54px;font-size:14px}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:8px 10px;margin-top:19px;font-size:9px;line-height:1.4}
+  .hero-meta .meta-separator{display:none}
+  .hero-meta>span{padding:5px 8px;border:1px solid #ffffff20;border-radius:999px;background:#092f3a66}
+  .hero-stamp{display:none}
+  .hero-bottom-line{background:linear-gradient(90deg,#d8533f,#eb783e);}
+  .hero-bottom-inner{min-height:39px;font-size:10px;letter-spacing:.02em}
+  .hotel-welcome{gap:10px;margin-top:16px;padding:11px 12px;border-radius:16px}
+  .hotel-welcome-mark{flex-basis:36px;width:36px;height:36px;border-radius:12px}
+  .hotel-welcome-copy small{font-size:7px}
+  .hotel-welcome-copy strong{font-size:12px}
+  .hotel-welcome-copy>span{font-size:9px}
+  .hotel-welcome-tag{display:none}
+  .quick-strip{position:relative;z-index:3;margin-top:-1px}
+  .quick-grid{grid-template-columns:repeat(2,minmax(0,1fr));padding:5px 0}
+  .quick-item{min-height:70px;padding:12px 8px;border-right:1px solid #f0e5d9;border-bottom:1px solid #f0e5d9}
+  .quick-item:first-child{padding-left:8px}
+  .quick-item:nth-child(2),.quick-item:nth-child(4){border-right:0}
+  .quick-item:nth-child(3),.quick-item:nth-child(4){border-bottom:0}
+  .quick-icon{width:36px;height:36px;flex-basis:36px;border-radius:12px;font-size:19px}
+  .quick-item strong{font-size:11px}
+  .quick-item small{font-size:9px;line-height:1.3}
+  .section{padding:58px 0}
+  .section-heading h2,.info-intro h2{font-size:clamp(31px,9vw,38px);line-height:1.08}
+  .discover-tools{display:grid;gap:11px}
+  .search-field{min-height:54px;border-radius:16px}
+  .search-field input{font-size:16px}
+  .search-field kbd{display:none}
+  .filters{gap:8px;padding:2px 2px 8px;scrollbar-width:none}
+  .filters::-webkit-scrollbar{display:none}
+  .filter-chip{min-height:42px;padding-inline:16px;border-radius:999px;font-size:11px}
+  .places-grid{gap:15px}
+  .place-card{border-radius:21px;box-shadow:0 12px 30px #173e3715}
+  .place-image-wrap{height:225px}
+  .place-card h3{font-size:20px}
+  .place-card p{font-size:12px;line-height:1.65}
+  .place-card .button{min-height:46px}
+  .plan-card{border-radius:20px;min-height:176px;grid-template-columns:91px minmax(0,1fr)}
+  .plan-number{top:12px;left:12px}
+  .plan-art{border-radius:18px 0 0 18px}
+  .plan-copy{padding:17px 13px}
+  .plan-copy h3{font-size:17px}
+  .plan-copy p{font-size:11px;line-height:1.55}
+  .plan-copy>a{min-height:40px;display:inline-flex;align-items:center}
+  .info-card{border-radius:18px;padding:18px}
+  .share-layout{gap:20px}
+  .share-actions .button{width:100%;min-height:52px}
+  .share-note{display:block;text-align:center}
+  .mobile-dock{position:fixed;z-index:60;left:50%;bottom:calc(9px + env(safe-area-inset-bottom));transform:translateX(-50%);width:min(100% - 22px,470px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;padding:7px;border:1px solid #ffffff25;border-radius:23px;background:#073541ee;box-shadow:0 12px 34px #001c2990;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+  .mobile-dock-item{min-width:0;min-height:55px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;border-radius:16px;color:#b9d4cf;font-size:9px;font-weight:800;transition:background .2s,color .2s,transform .2s,box-shadow .2s}
+  .dock-icon{display:grid;place-items:center;width:23px;height:23px}
+  .dock-icon svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .mobile-dock-item.active{color:#4a2d19;background:linear-gradient(135deg,#ffda72,#ffab4d);box-shadow:0 5px 13px #ed934143;transform:translateY(-2px)}
+  .mobile-dock-item:active{transform:scale(.95)}
+  .footer-inner{padding-bottom:5px}
+}
+@media(max-width:380px){.container{width:calc(100% - 26px)}.hero h1{font-size:47px}.hero-actions{max-width:none}.hotel-welcome{max-width:100%}.hotel-welcome-mark{display:none}.plan-card{grid-template-columns:78px minmax(0,1fr)}.plan-copy{padding-inline:10px}}
+@media(min-width:701px){.mobile-dock{display:none!important}.button-primary{animation:soft-glow 3.8s ease-in-out infinite}}
+@keyframes soft-glow{0%,100%{box-shadow:0 12px 26px #fb8c443d,0 2px 0 #fff5b45c inset}50%{box-shadow:0 15px 31px #fb8c4460,0 2px 0 #fff5b45c inset}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+.hero-actions .button-primary{animation:coast-glow 3.6s ease-in-out infinite}
+.mobile-dock-item.active .dock-icon{animation:dock-bob 2.4s ease-in-out infinite}
+@keyframes coast-glow{0%,100%{box-shadow:0 12px 26px #fb8c443d,0 2px 0 #fff5b45c inset}50%{box-shadow:0 15px 33px #fb8c4465,0 2px 0 #fff5b45c inset}}
+@keyframes dock-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}

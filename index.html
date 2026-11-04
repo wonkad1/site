@@ -16,15 +16,15 @@
   <title>Manavgat'a Hoş Geldiniz | Turizm Rehberi</title>
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css?v=4">
+  <script src="app.js?v=4" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="skip">İçeriğe geç</a>
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="#top" aria-label="Manavgat gezi rehberi ana sayfa">
-        <span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M9 11.5A5.5 5.5 0 0 1 14.5 6h19A5.5 5.5 0 0 1 39 11.5v22a4.5 4.5 0 0 1-4.5 4.5h-21A4.5 4.5 0 0 1 9 33.5v-22Z" stroke="currentColor" stroke-width="3"/><path d="M14 13h20v12H14zM14 30h.1M34 30h.1M16 38v3m16-3v3" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M5 19h4m30 0h4" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
+        <span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="12.5" r="7.5" stroke="currentColor" stroke-width="2.5"/><path d="M9 23h30M13 27h22M16 27v11m8-11v11m8-11v11M12 38h24M13 42c4-2.5 6-2.5 10 0s6 2.5 10 0 4-2.5 6-1.2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         <span class="brand-copy"><strong>MANAVGAT</strong><span>KEŞİF REHBERİ</span></span>
       </a>
       <nav class="main-nav" id="mainNav" aria-label="Ana menü">
@@ -54,6 +54,11 @@
             <a class="button button-ghost" href="#planla" data-i18n="planVisit">Ziyaretini planla</a>
           </div>
           <div class="hero-meta"><span><i class="meta-pulse"></i><span data-i18n="mobileGuide">Telefonun için hazırlandı</span></span><span class="meta-separator"></span><span data-i18n="fourLanguages">4 dilde rehber</span><span class="meta-separator"></span><span data-i18n="noInstall">Uygulama kurmadan açılır</span></div>
+          <div class="hotel-welcome" id="hotelWelcome" hidden>
+            <span class="hotel-welcome-mark" aria-hidden="true">✦</span>
+            <span class="hotel-welcome-copy"><small data-i18n="hotelWelcomeKicker">OTELİNİZDEN MANAVGAT'A</small><strong id="hotelWelcomeName"></strong><span data-i18n="hotelWelcomeText">Konaklamanız boyunca güzel duraklar cebinizde.</span></span>
+            <span class="hotel-welcome-tag" data-i18n="hotelWelcomeTag">OTEL MİSAFİRİNE ÖZEL</span>
+          </div>
         </div>
         <div class="hero-stamp"><span class="stamp-top" data-i18n="stampTop">KEŞFET · HİSSET</span><strong>36°47′N<br>31°26′E</strong><span class="stamp-bottom">MANAVGAT / ANTALYA</span></div>
       </div>
@@ -134,7 +139,7 @@
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="#top"><span class="brand-icon"><svg viewBox="0 0 48 48" fill="none"><path d="M9 11.5A5.5 5.5 0 0 1 14.5 6h19A5.5 5.5 0 0 1 39 11.5v22a4.5 4.5 0 0 1-4.5 4.5h-21A4.5 4.5 0 0 1 9 33.5v-22Z" stroke="currentColor" stroke-width="3"/><path d="M14 13h20v12H14zM14 30h.1M34 30h.1M16 38v3m16-3v3" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span><span class="brand-copy"><strong>MANAVGAT</strong><span>KEŞİF REHBERİ</span></span></a><span data-i18n="footerNote">Manavgat'ı keşfetmenin kolay yolu.</span><span>© <span id="year"></span> MANAVGAT</span></div></footer>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="#top"><span class="brand-icon"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="12.5" r="7.5" stroke="currentColor" stroke-width="2.5"/><path d="M9 23h30M13 27h22M16 27v11m8-11v11m8-11v11M12 38h24M13 42c4-2.5 6-2.5 10 0s6 2.5 10 0 4-2.5 6-1.2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="brand-copy"><strong>MANAVGAT</strong><span>KEŞİF REHBERİ</span></span></a><span data-i18n="footerNote">Manavgat'ı keşfetmenin kolay yolu.</span><span>© <span id="year"></span> MANAVGAT</span></div></footer>
 
   <div class="modal-backdrop" id="placeModal" hidden>
     <section class="place-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
@@ -144,6 +149,11 @@
     </section>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <nav class="mobile-dock" aria-label="Hızlı gezinme">
+    <a class="mobile-dock-item active" href="#top" data-dock-section="top"><span class="dock-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-6v-7h-4v7H4a1 1 0 0 1-1-1V10Z"/></svg></span><span data-i18n="mobileHome">Başlangıç</span></a>
+    <a class="mobile-dock-item" href="#kesfet" data-dock-section="kesfet"><span class="dock-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.6"/><path d="m16 16 4.5 4.5"/></svg></span><span data-i18n="mobileExplore">Keşfet</span></a>
+    <a class="mobile-dock-item" href="#planla" data-dock-section="planla"><span class="dock-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 20V5m0 0 13 3-13 4"/><path d="M5 20h14"/></svg></span><span data-i18n="mobilePlan">Rotalar</span></a>
+    <a class="mobile-dock-item" href="#paylas" data-dock-section="paylas"><span class="dock-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.3 10.8 7.4-4.5m-7.4 9.4 7.4 2.5"/></svg></span><span data-i18n="mobileShare">Paylaş</span></a>
+  </nav>
 </body>
 </html>
-

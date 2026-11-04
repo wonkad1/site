@@ -1,9 +1,10 @@
 # Manavgat Keşif Rehberi
 
-Ücretsiz QR ile açılan, mobil uyumlu ve dört dilli ziyaretçi rehberi.
+Ücretsiz GitHub Pages yayını: https://wonkad1.github.io/site/
 
-- Yayın adresi: https://wonkad1.github.io/site/
-- QR baskı sayfası: https://wonkad1.github.io/site/qr-print.html
-- Temel sayfa ve görseller ilk açılışta çevrimdışı kullanım için önbelleğe alınır.
-- Görseller temsili olarak yapay zekâ ile hazırlanmıştır; gerçek konum fotoğrafı değildir.
-- Bağımsız rehberdir; resmî kurum sitesi değildir. Güncel koşulları ilgili kaynaklardan teyit edin.
+- Telefonlarda kullanıma uygun, dört dilli ve çevrimdışı temel içerik desteği olan Manavgat ziyaretçi rehberi.
+- `QR_KODU.png` herkese açık yayına gider. `QR_LAN_KODU.png` yalnızca aynı Wi‑Fi/ağdaki telefonlarla yerel bilgisayardan açılır.
+- `OTEL_ENTEGRASYON.md`, otel adı ve marka rengiyle kişiselleştirilmiş demo bağlantısını anlatır.
+- `qr-print.html` otobüs ve duraklar için baskı QR'ları üretir.
+- Görseller yapay zekâ ile hazırlanmış temsili görsellerdir; gerçek konum fotoğrafı değildir.
+- Bağımsız rehberdir; resmî kurum sitesi değildir. Saat, ücret ve ulaşım koşullarını ilgili kaynaklardan teyit edin.

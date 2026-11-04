@@ -2,6 +2,7 @@
 
 const UI = {
   tr: {
+    hotelWelcomeKicker:'OTELİNİZDEN MANAVGAT\'A',hotelWelcomeText:'Konaklamanız boyunca güzel duraklar cebinizde.',hotelWelcomeTag:'OTEL MİSAFİRİNE ÖZEL',mobileHome:'Başlangıç',mobileExplore:'Keşfet',mobilePlan:'Rotalar',mobileShare:'Paylaş',
     noInstall:'Uygulama kurmadan açılır',flavourPhotoNote:'Temsili görsel',flavourKicker:'YAVAŞLA · TADINI ÇIKAR',flavourTitle:'Manavgat sadece görülecek değil, yaşanacak bir yer.',flavourText:'Nehir kıyısında mola ver, Side sokaklarında dolaş, yerel işletmeleri keşfet ve Akdeniz gününü acele etmeden yaşa. Menü, fiyat ve işletme bilgilerini ziyaret öncesinde kontrol et.',flavourButton:'Keşfe devam et ↗',offlinePill:'İlk açılıştan sonra temel içerikler çevrimdışı da saklanır.',qrAdminLink:'QR baskı sayfası',
     skip:'İçeriğe geç',navDiscover:'Keşfet',navPlan:'Planını yap',navTransport:'Ulaşım',navShare:'Paylaş',language:'Dil',
     heroEyebrow:'ANTALYA · TÜRKİYE',heroTitle:'Manavgat\'a<br><em>hoş geldiniz.</em>',heroLead:'Nehirlerin serinliğini, antik kentlerin hikâyesini ve Akdeniz\'in güzelliğini tek rehberde keşfedin.',exploreNow:'Manavgat\'ı keşfet',planVisit:'Ziyaretini planla',mobileGuide:'Telefonun için hazırlandı',fourLanguages:'4 dilde rehber',stampTop:'KEŞFET · HİSSET',heroBottom:'Bir QR kod. Koca bir keşif.',
@@ -15,6 +16,7 @@ const UI = {
     sourcesKicker:'GÜVENİLİR BİLGİ, İYİ GEZİ',sourcesTitle:'Bilginin kaynağını gör.',sourcesText:'Rehberdeki tarihî alan, gezi ve ulaşım bilgileri aşağıdaki kurumların yayımladığı içeriklerden derlenmiştir.',footerNote:'Manavgat\'ı keşfetmenin kolay yolu.',openMap:'Haritada aç ↗',officialInfo:'Kaynak bilgisi ↗',area:'Bölge',distance:'Uzaklık',hours:'Yayımlanan ziyaret saati',practicalTip:'Ziyaret notu',detailNotice:'Bilgiler değişebilir. Yola çıkmadan önce resmî kaynağı kontrol edin.',beachLocations:'Plaj konumları',
   },
   en: {
+    hotelWelcomeKicker:'A WELCOME FROM YOUR HOTEL',hotelWelcomeText:'Keep the best of Manavgat close throughout your stay.',hotelWelcomeTag:'FOR HOTEL GUESTS',mobileHome:'Home',mobileExplore:'Explore',mobilePlan:'Routes',mobileShare:'Share',
     noInstall:'Opens without installing an app',flavourPhotoNote:'Illustrative image',flavourKicker:'SLOW DOWN · SAVOR THE DAY',flavourTitle:'Manavgat is not just a place to see — it is a place to experience.',flavourText:'Pause by the river, wander through Side, discover local businesses and enjoy the Mediterranean at your own pace. Check menus, prices and business details before visiting.',flavourButton:'Keep exploring ↗',offlinePill:'Core guide content is saved for offline use after the first visit.',qrAdminLink:'QR print page',
     skip:'Skip to content',navDiscover:'Explore',navPlan:'Plan your visit',navTransport:'Getting here',navShare:'Share',language:'Language',
     heroEyebrow:'ANTALYA · TÜRKİYE',heroTitle:'Welcome to<br><em>Manavgat.</em>',heroLead:'Discover cool rivers, stories of ancient cities and the beauty of the Mediterranean in one guide.',exploreNow:'Explore Manavgat',planVisit:'Plan your visit',mobileGuide:'Made for your phone',fourLanguages:'Guide in 4 languages',stampTop:'EXPLORE · FEEL',heroBottom:'One QR code. A world to discover.',
@@ -28,6 +30,7 @@ const UI = {
     sourcesKicker:'TRUSTED INFORMATION, BETTER TRIPS',sourcesTitle:'See where the information comes from.',sourcesText:'History, visitor and transport information in this guide is compiled from the institutions listed below.',footerNote:'An easy way to discover Manavgat.',openMap:'Open map ↗',officialInfo:'Source information ↗',area:'Area',distance:'Distance',hours:'Published visiting hours',practicalTip:'Visitor note',detailNotice:'Information may change. Check the official source before visiting.',beachLocations:'Beach locations'
   },
   de: {
+    hotelWelcomeKicker:'EIN WILLKOMMEN VON IHREM HOTEL',hotelWelcomeText:'Die schönsten Orte Manavgats während Ihres Aufenthalts immer dabei.',hotelWelcomeTag:'FÜR HOTELGÄSTE',mobileHome:'Start',mobileExplore:'Entdecken',mobilePlan:'Routen',mobileShare:'Teilen',
     noInstall:'Öffnet ohne App-Installation',flavourPhotoNote:'Symbolbild',flavourKicker:'ENTSPANNEN · GENIESSEN',flavourTitle:'Manavgat ist nicht nur ein Ort zum Anschauen, sondern zum Erleben.',flavourText:'Machen Sie eine Pause am Fluss, schlendern Sie durch Side und entdecken Sie lokale Betriebe. Genießen Sie das Mittelmeer in Ihrem eigenen Tempo. Speisekarten, Preise und Angaben bitte vor dem Besuch prüfen.',flavourButton:'Weiter entdecken ↗',offlinePill:'Die wichtigsten Inhalte werden nach dem ersten Besuch offline gespeichert.',qrAdminLink:'QR-Druckseite',
     skip:'Zum Inhalt springen',navDiscover:'Entdecken',navPlan:'Besuch planen',navTransport:'Anreise',navShare:'Teilen',language:'Sprache',
     heroEyebrow:'ANTALYA · TÜRKEI',heroTitle:'Willkommen in<br><em>Manavgat.</em>',heroLead:'Entdecken Sie kühle Flüsse, Geschichten antiker Städte und die Schönheit des Mittelmeers in einem Reiseführer.',exploreNow:'Manavgat entdecken',planVisit:'Besuch planen',mobileGuide:'Für Ihr Smartphone gemacht',fourLanguages:'Reiseführer in 4 Sprachen',stampTop:'ENTDECKEN · ERLEBEN',heroBottom:'Ein QR-Code. Eine ganze Welt.',
@@ -41,6 +44,7 @@ const UI = {
     sourcesKicker:'VERTRAUENSWÜRDIGE INFORMATIONEN',sourcesTitle:'Informieren Sie sich über die Quellen.',sourcesText:'Die historischen, touristischen und verkehrlichen Informationen stammen aus den unten aufgeführten Institutionen.',footerNote:'Manavgat einfach entdecken.',openMap:'Karte öffnen ↗',officialInfo:'Quellenangabe ↗',area:'Gebiet',distance:'Entfernung',hours:'Veröffentlichte Besuchszeiten',practicalTip:'Besucherhinweis',detailNotice:'Informationen können sich ändern. Prüfen Sie vor dem Besuch die offizielle Quelle.',beachLocations:'Strandstandorte'
   },
   ru: {
+    hotelWelcomeKicker:'ПРИВЕТСТВИЕ ОТ ВАШЕГО ОТЕЛЯ',hotelWelcomeText:'Лучшие места Манавгата — рядом на протяжении всего отдыха.',hotelWelcomeTag:'ДЛЯ ГОСТЕЙ ОТЕЛЯ',mobileHome:'Главная',mobileExplore:'Открыть',mobilePlan:'Маршруты',mobileShare:'Поделиться',
     noInstall:'Открывается без установки приложения',flavourPhotoNote:'Иллюстративное изображение',flavourKicker:'НЕ СПЕШИТЕ · НАСЛАЖДАЙТЕСЬ',flavourTitle:'Манавгат — это место не только для просмотра, но и для впечатлений.',flavourText:'Отдохните у реки, прогуляйтесь по улицам Сиде и откройте для себя местные заведения. Наслаждайтесь Средиземноморьем в своём темпе. Перед посещением уточняйте меню, цены и сведения о заведениях.',flavourButton:'Продолжить знакомство ↗',offlinePill:'Основные материалы сохраняются для офлайн-доступа после первого посещения.',qrAdminLink:'Страница печати QR',
     skip:'Перейти к содержанию',navDiscover:'Открыть',navPlan:'План поездки',navTransport:'Как добраться',navShare:'Поделиться',language:'Язык',
     heroEyebrow:'АНТАЛЬЯ · ТУРЦИЯ',heroTitle:'Добро пожаловать<br><em>в Манавгат.</em>',heroLead:'Откройте прохладу рек, истории древних городов и красоту Средиземноморья в одном путеводителе.',exploreNow:'Открыть Манавгат',planVisit:'Спланировать поездку',mobileGuide:'Создано для телефона',fourLanguages:'Путеводитель на 4 языках',stampTop:'ОТКРОЙ · ПОЧУВСТВУЙ',heroBottom:'Один QR-код. Целый мир открытий.',
@@ -177,6 +181,32 @@ function toast(message) {
   window.clearTimeout(toast.timer); toast.timer = window.setTimeout(() => el.classList.remove('show'), 2300);
 }
 
+function setupHotelBranding() {
+  const params = new URLSearchParams(location.search);
+  const partner = params.get('hotel') || params.get('otel') || params.get('partner');
+  if (!partner) return;
+  const fallbackName = partner.replace(/[-_]+/g, ' ').trim();
+  const hotelName = (params.get('name') || params.get('hotelName') || params.get('otel_adi') || fallbackName).replace(/\s+/g, ' ').trim().slice(0, 48);
+  if (!hotelName) return;
+  $('#hotelWelcomeName').textContent = hotelName;
+  $('#hotelWelcome').hidden = false;
+  document.body.dataset.hotel = partner.slice(0, 60).replace(/[^\w-]/g, '');
+  const accent = params.get('accent') || params.get('renk') || '';
+  if (/^#(?:[\da-f]{3}|[\da-f]{6})$/i.test(accent)) document.documentElement.style.setProperty('--hotel-accent', accent);
+}
+
+function setupMobileDock() {
+  if (!('IntersectionObserver' in window)) return;
+  const items = $$('.mobile-dock-item');
+  const targets = items.map(item => document.getElementById(item.dataset.dockSection)).filter(Boolean);
+  const observer = new IntersectionObserver(entries => {
+    const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    if (!visible) return;
+    items.forEach(item => item.classList.toggle('active', item.dataset.dockSection === visible.target.id));
+  }, { rootMargin: '-32% 0px -58% 0px', threshold: [0, .15, .4] });
+  targets.forEach(target => observer.observe(target));
+}
+
 function setupEvents() {
   $('#languageSelect').addEventListener('change', event => {
     state.lang = event.target.value;
@@ -223,12 +253,14 @@ function setupEvents() {
     const id = link.dataset.placeLink; window.setTimeout(() => showPlace(id), 250);
   }));
   $('#year').textContent = new Date().getFullYear();
+  setupMobileDock();
 }
 
 (async function init() {
   const stored = (() => { try { return localStorage.getItem('manavgat-guide-language'); } catch { return null; } })();
   const browserLang = (navigator.language || 'tr').slice(0,2).toLowerCase();
   state.lang = ['tr','en','de','ru'].includes(stored) ? stored : (['tr','en','de','ru'].includes(browserLang) ? browserLang : 'en');
+  setupHotelBranding();
   setupEvents();
   applyLanguage();
   const scanSource = new URLSearchParams(location.search).get('via');
@@ -242,7 +274,7 @@ function setupEvents() {
     $('#placesGrid').innerHTML = `<div class="empty-state"><strong>${escapeHtml(error.message)}</strong><p>Sayfayı bir web sunucusu üzerinden açın; dosyaya doğrudan çift tıklamayın.</p></div>`;
   }
   if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) {
-    navigator.serviceWorker.register(new URL('sw.js', document.baseURI), { scope: new URL('./', document.baseURI).pathname })
+    navigator.serviceWorker.register(new URL('sw.js?v=4', document.baseURI), { scope: new URL('./', document.baseURI).pathname })
       .catch(() => {});
   }
 })();
